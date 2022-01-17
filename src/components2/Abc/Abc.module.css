@@ -1,0 +1,18 @@
+.monthright{
+    display: flex;
+    
+}
+
+
+.chartday{
+    background-color: tomato;
+    height: 40px;
+    width: 60                                                                                                    0px;
+}
+
+.listdrow{
+    background-color: turquoise;
+    height: 50px;
+    width: 60px;
+}
+

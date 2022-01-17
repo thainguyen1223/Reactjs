@@ -1,0 +1,78 @@
+.dashboadlisst{
+    height: 484px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+}
+
+.monthchart{
+    margin-top: 20px;
+    display: flex;
+   
+    border-radius: 12px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.charttitle{
+    color: #282739; 
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.charttime{
+    color: #A9A9B0;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.monthright{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 30px ;
+}
+
+.chartitem{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #282739;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+
+.chartlist{
+    padding: 8px 12px;
+    background-color: white;
+    border: 1.5px solid #D4D4D7;
+    box-sizing: border-box;
+    border-radius: 8px; 
+    display: flex;
+    
+}
+
+.drowdown{
+    padding-left: 15px;
+}
+ .monthright{
+    display: flex;
+    
+}
+
+.listdrow{
+    background-color: turquoise;
+ 
+}
+
+
