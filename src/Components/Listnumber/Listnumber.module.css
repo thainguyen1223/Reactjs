@@ -1,0 +1,75 @@
+.dashboadleft{
+
+    width: 200px;
+    height: 810px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 6px rgba(219, 219, 219, 0.5);
+    border-radius: 16px 0px 0px 16px;
+}
+
+.list ul {
+    list-style: none;
+    height: 48px;
+    
+}
+
+.alta{
+    position: absolute;
+    width: 80px;
+    height: 64px;
+    left: 60px;
+    top: 32px;;
+}
+
+.list{
+    position: absolute;
+    left: 0px;
+    top: 150px;
+    width: 200px;
+    height: 288px;
+    /* background-color: #FF9138; */
+    
+}
+
+.list li img {
+    vertical-align: middle;
+}
+.list button img {
+    vertical-align: middle;
+}
+.listheight{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7E7D88;
+    margin: 0px 8px
+}
+
+.listtitle{
+  
+    height: 48px;
+    background: #FFFFFF;
+    display: block;
+    border: 1px solid #FFFFFF ;
+    position: relative;
+}
+
+.listtitle:hover{
+    background: #FFF2E7;
+    color: #FF7506;
+}
+
+
+
+.listitem:hover> a{
+    color: #FF7506;
+    
+}
+
+.listitem{
+    margin-top: 10px;
+    margin-left: 10px;
+ }
+ 

@@ -1,0 +1,19 @@
+.addlevel{
+    width: 1440px;
+    background: #F7F7F7;
+    border-radius: 16px;
+    display: flex;
+}
+
+
+.listlevelright{
+    width: 1240px;
+    display: flex;
+    flex: 4 1;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+}
+
+
+

@@ -1,0 +1,287 @@
+.level{
+  /* margin-left: 20px; */
+  position: relative;
+}
+.levelinfo{
+    display:flex;
+    justify-content:space-between;
+    padding: 20px 0px;
+}
+
+.levelinfolist{
+    display: flex;
+    align-items: center;
+}
+.leveltitle{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #7E7D88;
+}
+
+.levelgoto{
+    color: #7E7D88;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.levellist{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FF7506;
+
+}
+
+.bell{
+    padding-right: 40px;
+}
+
+.levelcontainer{
+    display: flex;
+    flex-direction: column;
+    width: 92%;
+}
+.listadd{
+    display: flex;
+    flex-direction: column
+}
+.levellisttitle{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FF7506;
+
+}
+
+.levellistitem{
+    width: 92%;
+
+}
+
+.levellistdrow{
+    display: flex;
+    margin-top: 20px;
+}
+.listitemdrow{
+    display: flex;
+    width: 78%;
+ 
+    /* justify-content: space-between; */
+    
+    
+}
+
+.levelitem{
+    margin-right: 30px;
+  
+}
+.listitem{
+    display: flex;
+    justify-content: space-between;
+}
+
+.levelname{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #282739;
+}
+.leveldrow{
+   width: 154px;
+   
+}
+.leveldrowcalendar{
+    display: flex;
+    align-items: center;
+}
+.goright{
+    height: 5px;
+    width: 4.5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.tablelistitem{
+    margin-bottom:10px;
+    width: 100%;
+    filter: drop-shadow(2px 2px 8px rgba(232, 239, 244, 0.8));
+    border-radius: 12px;
+    display: flex;
+    flex-direction:column;
+    overflow:hidden;
+    padding: 0px;
+    margin-top:20px;
+}
+
+.levelitemseach{
+    display: flex;
+
+    flex-direction: column;
+}
+.searchinput input{
+    padding: 10px 16px 10px 12px;   
+    background: #FFFFFF;
+    border: 1.5px solid #D4D4D7;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 240px;
+    height: 44px;
+}
+
+.fi_search{
+    position: absolute;
+    right: 105px;
+    top: 177px;
+}
+.leveltable{
+    /* display: grid;
+    grid-template-columns: 93px 162px 171px 161px 174px 147px 120px 78px; */
+    display: flex;
+    color:white;
+    width: 100%;
+    background: #FF9138;
+}
+
+.leveltablelist{
+    display: flex;
+    color:white;
+    width: 100%;
+    background: #FFFFFF;
+}
+.leveltablelistid{
+    display: flex;
+    color:white;
+    width: 100%;
+    background: #FFF2E7;
+}
+
+.levelitemname{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    height: 49px;
+    border-right: 1px solid #FFE3CD;
+}
+
+.levelitemnameid{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    height: 49px;
+    border-right: 1px solid #FFE3CD;
+}
+
+.levelitemnametitle{
+    margin-left: 10px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+}
+.levelitemnametitleid{
+    margin-left: 10px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+}
+    .levelitemnametitle{
+        margin-left: 10px;
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+    
+        color: #FFFFFF;
+    
+}
+
+
+.levelitemlist{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #535261;
+    margin-left: 10px;
+}
+.levelitemlistnew{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-decoration-line: underline;
+    text-align: center;
+    justify-content: center;
+    color: #4277FF;
+    margin-left: 10px;
+}
+.leveltableid{
+    background:#FFF2E7;
+    display: flex;
+    width: 100%;
+}
+.logo{
+    margin-left: 10px;
+}
+.add{
+    position:absolute;
+    width: 80px;
+    height: 80px;
+    left: 1132px;
+    top: 227px;
+    display: flex;
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px 0px 0px 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 4px;
+    background: #FFF2E7;
+}
+
+.addlevel{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #FF7506;
+    flex: none;
+    margin: 4px 7px
+}
+.leveltitlename{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #FF7506;
+    padding: 7px
+}
+
+.chosepape{
+    width:90%;
+    margin-top:10px;
+    display:flex;
+    justify-content: flex-end;
+}

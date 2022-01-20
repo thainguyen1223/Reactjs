@@ -1,0 +1,29 @@
+.page{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.pageitem{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    cursor: pointer;
+    color: #7E7D88;
+}
+.pageitem:active{
+    background-color: #FF7506;
+    color:white;
+    padding: 0 6px;
+    border-radius: 4px;
+}
+
+.pageitem1{
+    background-color: #FF7506;
+    color:white;
+    padding: 0 6px;
+    border-radius: 4px;
+}

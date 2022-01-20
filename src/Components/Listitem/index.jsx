@@ -7,39 +7,51 @@ import logo_level from "../image/logo_level.png"
 import logo_setting from "../image/logo_setting.png"
 import logo_service from "../image/logo_service.png"
 import log_report from "../image/log_report.png"
-import logo_logout from "../image/logo_logout.png"
+import logo_logout from "../image/logo_logout.svg"
+import three from "../image/more.svg"
+import { Link  } from 'react-router-dom'
 const Listitem=()=>{
     const [info, setInfo] = useState(false);
+
+
+   
+
     return(
     <div className={classes.dashboadleft}>
-        <img src ={alta} ali='alta ' className={classes.alta}></img>   
+        <img src ={alta} ali='alta ' className={classes.alta} ></img>   
         <div className={classes.list}>  
                     <ul>
+                   
                         <li className={classes.listtitle}>
-                            <div className={classes.listitem}>
+                            <div className={classes.listitem } >
                                 <img  className={classes.logo1} src={logo_dashboard} alt='logo_dashboard'/>
                                 <a className={classes.listheight} href="">Dashboard</a>
                               
                             </div>
                         </li>
+                       
+                    
                         <li className={classes.listtitle}>
                             <div className={classes.listitem}>
                                 <img src={logo_device} alt='logo_device'/>
                                 <a className={classes.listheight}  href="">Thiết Bị</a>
                             </div>
                         </li>
+   
                         <li className={classes.listtitle}>
                             <div className={classes.listitem} >
                                 <img src={logo_service} alt='logo_service'/>
                                 <a className={classes.listheight}  href="">Dịch vụ</a>
                             </div>
                         </li>
+                    <Link to= '/level'>
                         <li className={classes.listtitle}>
                             <div className={classes.listitem} >
                                 <img src={logo_level} alt='logo_level'/>
                                 <a className={classes.listheight} href="">Cấp số</a>
                             </div>
                         </li>
+                    </Link>    
                         <li className={classes.listtitle}>
                             <div className={classes.listitem} >
                                 <img src={log_report} alt='log_report'/>
@@ -54,7 +66,7 @@ const Listitem=()=>{
                                 
                                 <img src={logo_setting } alt='logo_setting '/>
                                 <a className={classes.listheight}  href="">Cài đặt hệ thống 
-                                    <span className='fas fa-ellipsis-v fa-xs'> </span>
+                                <img src={three } alt='three '/>
                                 </a>
                             </div>
                             { info &&   <div className={classes.subnav}>

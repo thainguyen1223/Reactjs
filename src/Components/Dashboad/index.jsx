@@ -4,7 +4,7 @@ import Listitem from '../Listitem'
 import Menubar from '../Menubar'
 import Chart from '../Chart'
 import Chartmonth from '../Chartmonth'
-export default function Dashboadweek() {
+export default function Dashboad() {
     return(
         <div className={classes.dashboad}>
             <Listitem/>

@@ -26,7 +26,7 @@
     position: absolute;
     left: 0px;
     top: 150px;
-
+    width: 200px;
     height: 288px;
     /* background-color: #FF9138; */
     
@@ -49,7 +49,7 @@
 }
 
 .listtitle{
-    width: 200px;
+  
     height: 48px;
     background: #FFFFFF;
     display: block;
@@ -85,26 +85,23 @@ span{
     height: 48px;
     left: 12px;
     top: 580px;
-
-
-
     background: #FFF2E7;
     border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
 }
 
-div{
-    vertical-align: middle;
-}
+
 
 .color{
-    vertical-align: middle;
     color: #FF7506;
     font-family: Nunito;
     font-style: normal;
     font-weight: 580;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 5px;
+    margin-left: 20px;
 }
 
 
@@ -115,7 +112,7 @@ div{
     width: 200px;
     height: 144px;
     top: 0px;
-    left: 201px;
+    left: 199px;
     z-index: 1;
     background: #FFFFFF;
     display: grid;
