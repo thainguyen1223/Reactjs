@@ -18,7 +18,7 @@ import {
 
 
 function Chartmonth(){
-  const [open, setOpen] = useState(false);
+
   const data = [
     {
       name: '1',
@@ -26,13 +26,18 @@ function Chartmonth(){
     
     },
     {
+      name: '',
+      value: 4500,
+      
+    },
+    {
       name: '13',
       value: 3500,
       
     },
     {
-      name: '7',
-      value: 5800,
+      name: '',
+      value: 5000,
       
     },
     {
@@ -157,6 +162,8 @@ function Chartmonth(){
             
       }
       const defaultOption = options[0];
+
+
       return (    
         <div className={classes.dashboadlist}>
            <div className={classes.monthleft}>
@@ -170,26 +177,10 @@ function Chartmonth(){
                 </div>
 
                 <div className={classes.monthright}>
-                    <span className={classes.chartday}>
+                    <p className={classes.chartday}>
                             Xem theo
-                    </span>
-                    {/* <div className={classes.listdrow}>
-                      <div className={classes.list}>
-                        <div className={classes.chartitemday}>
-                                Ngày
-                        </div>
-                        <img src={drowdown} alt="drowdown" className={classes.drowdown}></img>
-            
-                        </div>
-                       < div className={classes.subnav}>
-                          <div className={classes.chartitemweek}>
-                                   <p>Tuần </p>
-                            </div>
-                            <div className={classes.chartitem}>
-                                    <p>Tháng</p>
-                          </div>
-                          </div>
-                    </div> */}
+                    </p>
+         
                              <Dropdown options={options} 
                         className='chartDropdown'
                         onChange={(e)=>handleDropdownValue(e)} 
@@ -199,11 +190,11 @@ function Chartmonth(){
             </div>
       
           <div className={classes.chartmonth}>
-              <ResponsiveContainer width="100%" aspect={ 8 / 3.5}>
+              <ResponsiveContainer width="100%" aspect={ 7 / 3}>
                     <AreaChart
                     width={500}
                     height={600}
-                    data={data}
+                    data={dataChart}
                     margin={{
                         top: 10,
                         right: 30,

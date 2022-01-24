@@ -45,7 +45,7 @@ function Detail(){
                         <div className={classes.name}>Khám tim mạch</div>
                         <div className={classes.adress}>Trạng thái:</div>
                         <div className={classes.source}>
-                            <img src={blue} alt="blue"></img>
+                            <img src={blue} alt="blue" className={classes.blue}></img>
                              Đang chờ</div>
 
                         <div className={classes.id}>Số thứ tự:</div>

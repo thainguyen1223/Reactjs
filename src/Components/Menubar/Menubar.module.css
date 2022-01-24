@@ -225,3 +225,19 @@ a{
 .rowleft{
     width: 4px;
 }
+
+
+
+.sdp {
+    width: auto !important;
+    height: 290px !important;
+    --theme-color: orange !important;
+    --disabled-color: orange !important;
+  }
+  .sdp--month-name {
+    color: orange !important;
+  }
+  .sdp--square-btn__shadowed {
+    color: orange !important;
+  }
+  

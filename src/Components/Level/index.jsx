@@ -28,8 +28,17 @@ function Level(){
     const optionsstatus = [
         'Tất cả', 'Đang chờ', 'Đã sử dụng','Bỏ qua'
       ];
+
+      const [status,setStatus] = useState()
       const sumitstatus =(e)=>{
-          console.log(e.value)
+        if(e.value === 'Đang chờ'){
+            setStatus(blue)
+
+          }else if(e.value === 'Đã sử dụng'){
+            setStatus(black)
+          }else if(e.value === 'Bỏ qua'){
+            setStatus(red)
+          }
       }
       const defaultOptionstatus = optionsstatus[0];
 
@@ -72,18 +81,20 @@ function Level(){
                             <div className={classes.levelitem}>
                                     <div className={classes.levelname}>Tên dịch vụ</div>
                                     <div className={classes.leveldrow}>
-                                        <Dropdown options={optionslevel} 
-                                        className={classes.chartDropdown}
-                                                onChange={(e)=>sumitstatus(e)} 
-                                                value={defaultOptionlevel} placeholder="Select an option" />
+                                    <Dropdown options={optionslevel} 
+                                       
+                                       onChange={(e)=>sumitlevel(e)} 
+                                       value={defaultOptionlevel} placeholder="Select an option" />
+                                        
                                     </div>
                             </div>
                             <div className={classes.levelitem}>
                                     <div className={classes.levelname}>Tình trạng</div>
                                     <div className={classes.leveldrow}>
-                                        <Dropdown options={optionsstatus} 
-                                                onChange={(e)=>sumitlevel(e)} 
+                                    <Dropdown options={optionsstatus}   
+                                                onChange={(e)=>sumitstatus(e)} 
                                                 value={defaultOptionstatus} placeholder="Select an option" />
+                                               
                                     </div>
                             </div>
                             <div className={classes.levelitem}>
@@ -221,7 +232,7 @@ function Level(){
                         </div>
                         <div className={classes.levelitemname} style={{width:"147px"}}>
                             <img src={blue} alt="blue" className={classes.logo} ></img>
-                            <p className={classes.levelitemnametitleid}> Đang chờ' </p>    
+                            <p className={classes.levelitemnametitleid}> Đang chờ </p>    
                         </div>
                         <div className={classes.levelitemname} style={{width:"120px"}}>
                             <p className={classes.levelitemnametitleid}> Hệ thống </p>    
@@ -251,7 +262,7 @@ function Level(){
                         </div>
                         <div className={classes.levelitemname} style={{width:"147px"}}>
                             <img src={blue} alt="blue" alt="blue" className={classes.logo}></img>
-                            <p className={classes.levelitemnametitleid}> Đang chờ' </p>    
+                            <p className={classes.levelitemnametitleid}> Đang chờ </p>   
                         </div>
                         <div className={classes.levelitemname} style={{width:"120px"}}>
                             <p className={classes.levelitemnametitleid}> Hệ thống </p>    
@@ -280,7 +291,7 @@ function Level(){
                         </div>
                         <div className={classes.levelitemname} style={{width:"147px"}}>
                             <img src={blue} alt="blue" alt="blue" className={classes.logo}></img>
-                            <p className={classes.levelitemnametitleid}> Đang chờ' </p>    
+                            <p className={classes.levelitemnametitleid}> Đang chờ </p>    
                         </div>
                         <div className={classes.levelitemname} style={{width:"120px"}}>
                             <p className={classes.levelitemnametitleid}> Kiosk </p>    

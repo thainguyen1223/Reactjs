@@ -1,18 +1,23 @@
-.level{
-  /* margin-left: 20px; */
-  position: relative;
+.account{
+    position: relative;
 }
-.levelinfo{
+.levelgoto{
+    color: #7E7D88;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.accountinfo{
     display:flex;
     justify-content:space-between;
     padding: 20px 0px;
 }
 
-.levelinfolist{
+.accountinfolist{
     display: flex;
     align-items: center;
 }
-.leveltitle{
+.accounttitle{
     font-family: Nunito;
     font-style: normal;
     font-weight: bold;
@@ -21,13 +26,13 @@
     color: #7E7D88;
 }
 
-.levelgoto{
+.accountgoto{
     color: #7E7D88;
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.levellist{
+.accountlist{
     font-family: Nunito;
     font-style: normal;
     font-weight: bold;
@@ -41,16 +46,16 @@
     padding-right: 40px;
 }
 
-.levelcontainer{
+.accountcontainer{
     display: flex;
     flex-direction: column;
-    width: 92%;
+    width: 96%;
 }
-.listadd{
+/* .listadd{
     display: flex;
     flex-direction: column
-}
-.levellisttitle{
+} */
+.accountlisttitle{
     font-family: Nunito;
     font-style: normal;
     font-weight: bold;
@@ -60,34 +65,30 @@
 
 }
 
-.levellistitem{
-    width: 92%;
+.accountlistitem{
+    width: 1005;
 
 }
 
-.levellistdrow{
-    display: flex;
+.accountlistdrow{
+    /* display: flex; */
     margin-top: 20px;
 }
-.listitemdrow{
+.accountitemdrow{
     display: flex;
-    width: 78%;
- 
-    /* justify-content: space-between; */
-    
+     justify-content: space-between; 
     
 }
-
-.levelitem{
+.accountitem{
     margin-right: 30px;
   
 }
-.listitem{
+/* .listitem{
     display: flex;
     justify-content: space-between;
-}
+} */
 
-.levelname{
+.accountname{
     font-family: Nunito;
     font-style: normal;
     font-weight: 600;
@@ -95,23 +96,31 @@
     line-height: 24px;
     color: #282739;
 }
-.leveldrow{
-   width: 154px;
+.accountdrow{
+   width: 300px;
    
+} 
+
+.accountdrow input{
+  
+    padding: 10px 16px 10px 12px;   
+    background: #FFFFFF;
+    border: 1.5px solid #D4D4D7;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 300px;
+    height: 44px;
 }
-.leveldrowcalendar{
-    display: flex;
-    align-items: center;
+
+.fi_search{
+    position: absolute;
+    right: 92px;
+    top: 178px;
 }
-.goright{
-    height: 5px;
-    width: 4.5px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
+
 .tablelistitem{
     margin-bottom:10px;
-    width: 100%;
+    width: 97.5%;
     filter: drop-shadow(2px 2px 8px rgba(232, 239, 244, 0.8));
     border-radius: 12px;
     display: flex;
@@ -121,27 +130,7 @@
     margin-top:20px;
 }
 
-.levelitemseach{
-    display: flex;
-
-    flex-direction: column;
-}
-.searchinput input{
-    padding: 10px 16px 10px 12px;   
-    background: #FFFFFF;
-    border: 1.5px solid #D4D4D7;
-    box-sizing: border-box;
-    border-radius: 8px;
-    width: 240px;
-    height: 44px;
-}
-
-.fi_search{
-    position: absolute;
-    right: 105px;
-    top: 177px;
-}
-.leveltable{
+.accounttable{
     /* display: grid;
     grid-template-columns: 93px 162px 171px 161px 174px 147px 120px 78px; */
     display: flex;
@@ -150,20 +139,41 @@
     background: #FF9138;
 }
 
-.leveltablelist{
+.accounttablelist{
     display: flex;
     color:white;
     width: 100%;
     background: #FFFFFF;
 }
-.leveltablelistid{
+
+
+.accountitemname{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    height: 49px;
+    border-right: 1px solid #FFE3CD;
+}
+
+.accountitemnametitle{
+    margin-left: 10px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+}
+
+.accounttablelistid{
     display: flex;
     color:white;
     width: 100%;
     background: #FFF2E7;
 }
 
-.levelitemname{
+.accountitemnameid{
     display: flex;
     flex-direction: row;
     align-items:center;
@@ -171,25 +181,8 @@
     border-right: 1px solid #FFE3CD;
 }
 
-.levelitemnameid{
-    display: flex;
-    flex-direction: row;
-    align-items:center;
-    height: 49px;
-    border-right: 1px solid #FFE3CD;
-}
 
-.levelitemnametitle{
-    margin-left: 10px;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 24px;
-
-    color: #FFFFFF;
-}
-.levelitemnametitleid{
+.accountitemnametitleid{
     margin-left: 10px;
     font-family: Nunito;
     font-style: normal;
@@ -197,49 +190,23 @@
     font-size: 16px;
     line-height: 24px;
 }
-.levelitemnametitle{
-    margin-left: 10px;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 24px;
-    color: #FFFFFF;
-    
-}
 
-
-.levelitemlist{
+.accountitemlistnew{
     font-family: Nunito;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
-    color: #535261;
-    margin-left: 10px;
-}
-.levelitemlistnew{
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 21px;
+    color: #4277FF;
     display: flex;
     align-items: center;
     text-decoration-line: underline;
     text-align: center;
     justify-content: center;
     color: #4277FF;
-    margin-left: 10px;
+    margin-left: 25px;
 }
-.leveltableid{
-    background:#FFF2E7;
-    display: flex;
-    width: 100%;
-}
-.logo{
-    margin-left: 10px;
-}
+
 .add{
     position:absolute;
     width: 80px;
@@ -256,7 +223,7 @@
     background: #FFF2E7;
 }
 
-.addlevel{
+.addaccount{
     font-family: Nunito;
     font-style: normal;
     font-weight: 600;
@@ -267,7 +234,7 @@
     flex: none;
     margin: 4px 7px
 }
-.leveltitlename{
+.accounttitlename{
     font-family: Nunito;
     font-style: normal;
     font-weight: 600;
@@ -283,4 +250,7 @@
     margin-top:10px;
     display:flex;
     justify-content: flex-end;
+}
+.logo{
+    margin-left: 10px;
 }

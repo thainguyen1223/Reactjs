@@ -1,0 +1,187 @@
+.account{
+    position: relative;
+}
+.levelgoto{
+    color: #7E7D88;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.accountinfo{
+    display:flex;
+    justify-content:space-between;
+    padding: 20px 0px;
+}
+
+.accountinfolist{
+    display: flex;
+    align-items: center;
+}
+.accounttitle{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #7E7D88;
+}
+
+.accountgoto{
+    color: #7E7D88;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.accountlist{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FF7506;
+
+}
+
+.bell{
+    padding-right: 40px;
+}
+
+.accountcontainer{
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+}
+
+.accountlisttitle{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FF7506;
+
+}
+
+.accountlistitem{
+    /* display: flex; */
+    margin-top: 20px;
+    width: 1192px;
+    height: 514px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+    border-radius: 16px;
+}
+
+.accountlistinformation{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FF7506;
+}
+
+.listitem{
+    padding: 20px;
+}
+
+.listinformation{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 88px 88px 88px 88px;
+}
+
+.accountid{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #282739;
+    margin-bottom: 10px;
+}
+
+.titlecontnet{
+    background: #FFFFFF;
+    padding: 10px 270px 10px 12px;
+    border: 1.5px solid #D4D4D7;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 550px;
+}
+
+.accountdrow{
+    width: 550px;
+}
+
+.accountdrow .Dropdown-placeholder is-selected{
+    color: #A9A9B0;
+
+}
+
+.accountnameitem{
+    display: flex;
+}
+.star{
+    margin-right: 4px;
+}
+.starid{
+    padding: 2.5px;
+}
+
+.eyeopenpass{
+    position: absolute;
+    right: 70px;
+    top: 324px;
+}
+
+.eyeopennewpass{
+    position: absolute;
+    right: 70px;
+    top: 411px;
+}
+
+.userbutton{
+    display: flex ;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.cannel{
+    background: #FFF2E7;
+    border: 1.5px solid #FF9138;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px;
+    padding: 10px 24px;
+    width: 147px;
+    margin-left: 26px;
+}
+
+.more{
+    background: #FF9138;
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px;
+    padding: 10px 24px;
+    width: 147px;
+    box-sizing: border-box;
+    margin-left: 26px;
+}
+
+.canneltitle{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FF9138;
+}
+
+.moretitle{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}

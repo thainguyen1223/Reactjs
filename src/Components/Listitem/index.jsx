@@ -71,7 +71,9 @@ const Listitem=()=>{
                             </div>
                             { info &&   <div className={classes.subnav}>
                                     <li><a href="#">Quản lý vai trò</a></li>
+                                    <Link to='/dashboard/AccountManagement'>
                                     <li><a href="#">Quản lý tài khoản</a></li>
+                                    </Link>
                                     <li><a href="#">Nhật ký người dùng</a></li>
                                 </div>
                             }
