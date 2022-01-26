@@ -1,23 +1,23 @@
-.account{
+.service{
     position: relative;
 }
-.levelgoto{
+.servicegoto{
     color: #7E7D88;
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.accountinfo{
+.serviceinfo{
     display:flex;
     justify-content:space-between;
-    
+    /* padding: 20px 0px; */
 }
 
-.accountinfolist{
+.serviceinfolist{
     display: flex;
     align-items: center;
 }
-.accounttitle{
+.servicetitle{
     font-family: Nunito;
     font-style: normal;
     font-weight: bold;
@@ -26,13 +26,13 @@
     color: #7E7D88;
 }
 
-.accountgoto{
+.servicegoto{
     color: #7E7D88;
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.accountlist{
+.servicelist{
     font-family: Nunito;
     font-style: normal;
     font-weight: bold;
@@ -46,17 +46,17 @@
     padding-right: 40px;
 }
 
-.accountcontainer{
+.servicecontainer{
     display: flex;
     flex-direction: column;
-    width: 96%;
-    margin-top: 40px;
+    width: 95%;
+    margin-top: 20px;
 }
 /* .listadd{
     display: flex;
     flex-direction: column
 } */
-.accountlisttitle{
+.servicelisttitle{
     font-family: Nunito;
     font-style: normal;
     font-weight: bold;
@@ -66,30 +66,41 @@
 
 }
 
-.accountlistitem{
-    width: 1005;
 
+.fi_search{
+    position: absolute;
+    right: 101px;
+    top: 159px;
 }
 
-.accountlistdrow{
-    /* display: flex; */
-    margin-top: 20px;
-}
-.accountitemdrow{
+.servicelistdrow{
     display: flex;
-     justify-content: space-between; 
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.serviceitemdrow{
+    display: flex;
+    /* justify-content: space-between;  */
+    width: 95%;
     
 }
-.accountitem{
-    margin-right: 30px;
+.serviceitem{
+    margin-right: 26px;
   
 }
-/* .listitem{
+.listitem{
     display: flex;
     justify-content: space-between;
-} */
+} 
 
-.accountname{
+.goright{
+    height: 5px;
+    width: 4.5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.servicename{
     font-family: Nunito;
     font-style: normal;
     font-weight: 600;
@@ -97,13 +108,16 @@
     line-height: 24px;
     color: #282739;
 }
-.accountdrow{
+.servicedrow{
    width: 300px;
    
 } 
-
-.accountdrow input{
-  
+.servicedrowcalendar{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+.servicedrow input{
     padding: 10px 16px 10px 12px;   
     background: #FFFFFF;
     border: 1.5px solid #D4D4D7;
@@ -113,15 +127,9 @@
     height: 44px;
 }
 
-.fi_search{
-    position: absolute;
-    right: 92px;
-    top: 178px;
-}
-
 .tablelistitem{
     margin-bottom:10px;
-    width: 97.5%;
+    width: 1113px;
     filter: drop-shadow(2px 2px 8px rgba(232, 239, 244, 0.8));
     border-radius: 12px;
     display: flex;
@@ -131,7 +139,7 @@
     margin-top:20px;
 }
 
-.accounttable{
+.servicetable{
     /* display: grid;
     grid-template-columns: 93px 162px 171px 161px 174px 147px 120px 78px; */
     display: flex;
@@ -139,24 +147,29 @@
     width: 100%;
     background: #FF9138;
 }
-
-.accounttablelist{
+.servicetablelist{
     display: flex;
     color:white;
     width: 100%;
     background: #FFFFFF;
 }
 
+.servicetablelistid{
+    display: flex;
+    color:white;
+    width: 100%;
+    background: #FFF2E7;
+}
 
-.accountitemname{
+.serviceitemname{
     display: flex;
     flex-direction: row;
     align-items:center;
     height: 49px;
-    border-right: 1px solid #FFE3CD;
+    border-right: 1px solid #FFE3CD
 }
 
-.accountitemnametitle{
+.serviceitemnametitle{
     margin-left: 10px;
     font-family: Nunito;
     font-style: normal;
@@ -167,14 +180,29 @@
     color: #FFFFFF;
 }
 
-.accounttablelistid{
-    display: flex;
-    color:white;
-    width: 100%;
-    background: #FFF2E7;
+.serviceitemnametitle{
+    margin-left: 10px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    
 }
-
-.accountitemnameid{
+.logo{
+    margin-left: 10px;
+}
+.serviceitemlist{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #535261;
+    margin-left: 10px;
+}
+.serviceitemnameid{
     display: flex;
     flex-direction: row;
     align-items:center;
@@ -182,8 +210,7 @@
     border-right: 1px solid #FFE3CD;
 }
 
-
-.accountitemnametitleid{
+.serviceitemnametitleid{
     margin-left: 10px;
     font-family: Nunito;
     font-style: normal;
@@ -191,8 +218,18 @@
     font-size: 16px;
     line-height: 24px;
 }
+.serviceitemnametitle{
+    margin-left: 10px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    
+}
 
-.accountitemlistnew{
+.serviceitemlistnew{
     font-family: Nunito;
     font-style: normal;
     font-weight: normal;
@@ -207,13 +244,12 @@
     color: #4277FF;
     margin-left: 25px;
 }
-
 .add{
     position:absolute;
     width: 80px;
     height: 80px;
     left: 1132px;
-    top: 227px;
+    top: 209px;
     display: flex;
     box-shadow: 0px 0px 6px #E7E9F2;
     border-radius: 8px 0px 0px 8px;
@@ -224,7 +260,7 @@
     background: #FFF2E7;
 }
 
-.addaccount{
+.addservice{
     font-family: Nunito;
     font-style: normal;
     font-weight: 600;
@@ -235,7 +271,7 @@
     flex: none;
     margin: 4px 7px
 }
-.accounttitlename{
+.servicetitlename{
     font-family: Nunito;
     font-style: normal;
     font-weight: 600;
@@ -248,10 +284,7 @@
 
 .chosepape{
     width:90%;
-    margin-top:10px;
+    margin-top:40px;
     display:flex;
     justify-content: flex-end;
-}
-.logo{
-    margin-left: 10px;
 }

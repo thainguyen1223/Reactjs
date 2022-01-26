@@ -21,7 +21,7 @@ const Listitem=()=>{
         <img src ={alta} ali='alta ' className={classes.alta} ></img>   
         <div className={classes.list}>  
                     <ul>
-                   
+                    <Link to= '/dashboard'>
                         <li className={classes.listtitle}>
                             <div className={classes.listitem } >
                                 <img  className={classes.logo1} src={logo_dashboard} alt='logo_dashboard'/>
@@ -29,7 +29,7 @@ const Listitem=()=>{
                               
                             </div>
                         </li>
-                       
+                    </Link>   
                     
                         <li className={classes.listtitle}>
                             <div className={classes.listitem}>
@@ -37,13 +37,14 @@ const Listitem=()=>{
                                 <a className={classes.listheight}  href="">Thiết Bị</a>
                             </div>
                         </li>
-   
+                    <Link to= '/service'>    
                         <li className={classes.listtitle}>
                             <div className={classes.listitem} >
                                 <img src={logo_service} alt='logo_service'/>
                                 <a className={classes.listheight}  href="">Dịch vụ</a>
                             </div>
                         </li>
+                    </Link> 
                     <Link to= '/level'>
                         <li className={classes.listtitle}>
                             <div className={classes.listitem} >
@@ -74,15 +75,19 @@ const Listitem=()=>{
                                     <Link to='/dashboard/AccountManagement'>
                                     <li><a href="#">Quản lý tài khoản</a></li>
                                     </Link>
+                                    <Link to ='/dashboard/Diarywork'>
                                     <li><a href="#">Nhật ký người dùng</a></li>
+                                    </Link>
                                 </div>
                             }
 
                         </li>
+                        <Link to='/'>
                         <button onClick={classes.sumit} className={classes.logout}>
                                 <img src={logo_logout} alt='logo_logout'/>
                                 <a href="" className={classes.color}>Đăng xuất </a>
                         </button>
+                        </Link>
                     </ul>
                        
         </div>

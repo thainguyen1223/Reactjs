@@ -4,7 +4,7 @@ import pic5 from  "../image/pic5.png"
 import pic6 from  "../image/pic6.png"
 import pic7 from  "../image/pic7.png"
 import pic8 from  "../image/pic8.png"
-
+import {Link} from 'react-router-dom';
 const Login =()=>{
     return(
         <div className={classes.login}>
@@ -15,12 +15,14 @@ const Login =()=>{
                         <input type="text" className={classes.title} name="" placeholder="lequynhavan01"/>
                         
                         <div className={classes.password}>Mật khẩu * </div>
-                        <input type="text"  className={classes.title} name="" placeholder="****"/>
+                        <input type="password"  className={classes.title} name="" placeholder="****"/>
                         <img src={pic7}  ali='eye'className={classes.eye}  ></img>
                         <div className={classes.password1}>Quên mật khẩu? </div>
                         
                     </div>
-                    <button className={classes.sumit} clonClick={classes.sumit}> Đăng nhập </button>
+                    <Link to="/wrong">
+                    <button className={classes.sumit} > Đăng nhập </button>
+                    </Link>
             </div>
             <div className={classes.right}>
                     <img src={pic5} ali='pic5' className={classes.pic5}></img>

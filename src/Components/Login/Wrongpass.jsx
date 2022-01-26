@@ -5,6 +5,8 @@ import pic6 from  "../image/pic6.png"
 import pic7 from  "../image/pic7.png"
 import pic8 from  "../image/pic8.png"
 // import pic9 from  "./image/pic9.png"
+import {Link} from 'react-router-dom';
+import warning from '../image/warning.svg'
 const Wrongpass =()=>{
     return(
         <div className={classes.login}>
@@ -15,11 +17,16 @@ const Wrongpass =()=>{
                         <input type="text" className={classes.title} name="" placeholder="Aivan288"/>
                         
                         <div className={classes.password}>Mật khẩu * </div>
-                        <input type="text"  className={classes.title} name="" placeholder="******"/>
+                        <input type="password"  className={classes.title} name="" placeholder="******"/>
                         <img src={pic7}  ali='eye'className={classes.eye}  ></img>
                         {/* <img src={pic9} ali='pic5' className={classes.pic9}></img> */}
-                        <div className={classes.wrongpass}>Sai mật khẩu hoặc tên đăng nhập </div>
+                        <Link to="/wrong/forgot">
                         
+                        <div className={classes.wrongpass}>
+                            <img src={warning} alt="warning" className={classes.warning}></img>
+                           <p className={classes.wrongpasstitle}>Sai mật khẩu hoặc tên đăng nhập </p> 
+                            </div>
+                        </Link>
                     </div>
                     <button className={classes.sumit} clonClick={classes.sumit}> Đăng nhập </button>
                     <div className={classes.pass}>Quên mật khẩu? </div>

@@ -86,7 +86,7 @@ span{
 
 
 
-.listitem:hover> a{
+.listitem:active> a{
     color: #FF7506;
     
 }

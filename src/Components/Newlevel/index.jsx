@@ -14,8 +14,11 @@ function Newlevel() {
           console.log(e.value)
       }
       const defaultOptionservice = optionservice[0];
-
-    
+      const [isShow, setIsShow] = useState(false);
+     
+    //   const modal=document.querySelectorAll('.&time')
+    //   const modalContainer =document.querySelector('.print')
+    //   modalContainer.classList('open')
       
     return(
         <div className={classes.level}>
@@ -59,25 +62,36 @@ function Newlevel() {
                                 <a href="" className={classes.canneltitle}>Hủy bỏ  </a>
                             </button>
                         </Link>    
-                        <Link to= '/level/service'>
-                            <button  className={classes.print}>
+                        {/* <Link to= '/level/service'> */}
+                            <button  className={classes.print} onClick={()=>setIsShow(true)} >
                                 <a href="" className={classes.printtitle}>In số </a>
-                                {/* <div className={classes.propprint}>
-                                    <label className={classes.dele}>
-                                        <img src={dele} alt="dele" ></img>
-                                    </label>
-                                    <dlv className={classes.propkey}>
-                                        <div className={classes.number}>Số thứ tự được cấp</div>
-                                        <div className={classes.id}>2001201</div>
-                                        <div className={classes.DV}>DV: Khám răng hàm mặt (tại quầy số 1)</div>
-                                    </dlv>
-                                    <div className={classes.propprintbottom}>
-                                        <div className={classes.time}>Thời gian cấp: 09:30 11/10/2021 </div>
-                                        <div className={classes.user}>Hạn sử dụng: 17:30 11/10/2021 </div>
-                                    </div>
-                                </div> */}
-                            </button>
-                        </Link>
+                                { isShow &&  <div className={classes.modal}>
+                                           <div className={classes.modal__item}>
+                                            <Link to ="/level/service">
+                                            <div className={classes.modal__item_close}>
+                                                    &times;
+                                            </div>
+                                            </Link>
+                                            <div className={classes.modal__item_title}>Số thứ tự được cấp</div>
+                                            <div className={classes.modal__item_number}>2001201</div>
+                                            <div className={classes.modal__item_des}>DV: Khám răng hàm mặt <span>(tại quầy số 1)</span></div>
+                                            <div className={classes.modal__item_footer}>s
+
+                                                        <div className={classes.modal__item_footer__item}>
+                                                                    <span>Thời gian cấp:</span>
+                                                                    <span>09:30 11/10/2021</span>
+                                                        </div>
+                                                        <div className={classes.modal__item_footer__item}>
+                                                                    <span>Thời gian cấp:</span>
+                                                                    <span>09:30 11/10/2021</span>
+                                                        </div>
+                                                
+                                            </div>
+                                
+                                      </div>
+                             </div>
+                     }    </button>
+                        {/* </Link> */}
                          </div>
                                                      
                     </div>
@@ -88,5 +102,6 @@ function Newlevel() {
         </div>
     )
 }
+
 
 export default Newlevel;

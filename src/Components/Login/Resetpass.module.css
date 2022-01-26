@@ -58,7 +58,16 @@ h4{
     margin: 4px 0px;
     padding-top: 10px;
 }
-
+.eyeclose{
+    position: absolute;
+    top: 37px;
+    right: 21px;
+}
+.eyeclosepass{
+    position: absolute;
+    top: 112px;
+    right: 21px;
+}
 .password1{
     position: absolute;
     width: 102px;

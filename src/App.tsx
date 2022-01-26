@@ -14,14 +14,17 @@ import Numberlevel from './Components/Numberlevel';
 import AccountManagement from './Components/AccountManagement'
 import Moreaccount from './Components/Moreaccount'
 import Updateaccount from './Components/Updateaccount'
+import Diarywork from './Components/Diarywork'
+import Service from './Components/Service'
+import Addservice from './Components/Addservice';
 function App() {
   return (
     <div className="App">
          <Routes>
           <Route path='/' element={<Login/>}/>
           <Route path='/wrong' element={<Wrongpass/>}/>
-          <Route path='/forgot' element={<Forgotpass/>}/>
-          <Route path='/reset' element={<Resetpass/>}/>
+          <Route path='/wrong/forgot' element={<Forgotpass/>}/>
+          <Route path='/wrong/forgot/reset' element={<Resetpass/>}/>
           <Route path='/account' element={<Account/>}/>
           <Route path='/dashboard' element={<Dashboad/>}/>
           <Route path='/level' element={<Listlevel/>}/>
@@ -33,6 +36,9 @@ function App() {
           <Route path='/dashboard/AccountManagement' element={<AccountManagement/>}/>
           <Route path='/dashboard/AccountManagement/Moreaccount' element={<Moreaccount/>}/>
           <Route path='/dashboard/AccountManagement/Updateaccount' element={<Updateaccount/>}/>
+          <Route path='/dashboard/Diarywork' element={<Diarywork/>}/>
+          <Route path='/service' element={<Service/>}/>
+          <Route path='/listservice' element={<Addservice/>}/>
     </Routes>
     </div>
   );

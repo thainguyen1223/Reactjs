@@ -37,7 +37,7 @@ body{
     height: 44px;
     width: 400px;
     left: 94px;
-    top: 410px;
+    top: 400px;
     border-radius: 8px;
     background-color: #FFFFFF;
     border: 1.5px solid #D4D4D7;
@@ -45,39 +45,22 @@ body{
     border-radius: 8px;
     padding: 10px 220px 10px 12px;
 }
-/* .name{
-    margin: 4px 0px;
-}
-.password{
-    margin: 4px 0px;
-    padding-top: 10px;
-}
-
-.wrongpass{
-    position: absolute;
-    width: 102px;
-    height: 21px;
-    margin-top: 10px;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 21px;
-    color: #E73F3F;
-    } */
 
 .pass{
- 
+    position: absolute;
+    top: 322px;
+    right: 217px;
     height: 24px;
-    width: 170px;
-  
-    
-    border-radius: nullpx;
+    width: 170px; 
+}
+
+.passtitle{
     font-family: Nunito;
     font-style: normal;
     font-weight: bold;
     font-size: 22px;
     line-height: 33px;
+    color: #282739;
 }
 
 .email{
@@ -86,8 +69,13 @@ body{
     height: 27px;
     left: 100px;
     top: 360px;
+}
+
+.emailtitle{
+    font-family: Nunito;
+    font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 19px;
     line-height: 27px;
     color: #37474F;
 }

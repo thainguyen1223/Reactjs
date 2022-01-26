@@ -26,7 +26,7 @@ function Listaccount(){
       const defaultOptionaccount = optionsaccount[0];
     return(
     <div className={classes.account}>
-         <div className={classes.accountinfo}>
+        <div className={classes.accountinfo}>
             <div className={classes.accountinfolist}>
                 <p className={classes.accounttitle}>
                     Cài đặt hệ thống

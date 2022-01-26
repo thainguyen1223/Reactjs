@@ -68,15 +68,24 @@ span{
 }
 
 .listtitle:hover{
-    background: #FFF2E7;
-    color: #FF7506;
+    background-color: #FF7506;
+    /* color: #FF7506; */
+    color: #FFFFFF;
 }
 
 
 
 .listitem:hover> a{
-    color: #FF7506;
+    background-color: #FF7506;
+    color: #FFFFFF;
+
     
+}
+.listtitle:active >a{
+    background-color: #FF7506;
+    color: #FFFFFF;
+    /* color:white; */
+ 
 }
 
 .logout{
@@ -136,11 +145,15 @@ li{
 }
 
 .subnav li:hover>a{
-    color: #FF7506;
+    color: #FFFFFF;
 
 }
 
 .subnav li:hover{
-    background: #FFF2E7;
-    color: #FF7506;
+    color: #FFFFFF;
+    background-color: #FF7506;
+}
+
+.listtitle:active{
+    
 }
