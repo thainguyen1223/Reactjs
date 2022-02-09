@@ -1,0 +1,107 @@
+.account{
+    position: relative;
+}
+.levelgoto{
+    color: #7E7D88;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.accountinfo{
+    display:flex;
+    justify-content:space-between;
+    
+}
+
+.accountinfolist{
+    display: flex;
+    align-items: center;
+}
+.accounttitle{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #7E7D88;
+}
+
+.accountgoto{
+    color: #7E7D88;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.accountlist{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FF7506;
+
+}
+
+.bell{
+    padding-right: 40px;
+}
+
+.accountcontainer{
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    margin-top: 40px;
+}
+
+.accountlisttitle{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FF7506;
+
+}
+
+.addaccount{
+    background: #FFFFFF;
+    box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+    border-radius: 16px;
+    padding:20px;
+    margin-top: 20px;
+}
+
+.addaccounttitle{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FF7506;
+}   
+
+.contaniner__input{
+    display: flex;
+}
+
+.contaniner__input1{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+}
+
+.serviceCode{
+
+}
+.serviceCodetitle span{
+    color:red;
+    transform:translateY(3px);
+    display: inline-block;
+    margin-left:2px
+}
+.serviceCodeinput {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 10px 10px 12px;
+}
