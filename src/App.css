@@ -57,11 +57,52 @@
   top: 50%;
   transform: translateY(-50%);
 }
+.react-datepicker__current-month{
+  color: #FF7506 !important;
+}
+.react-datepicker__day-name{
+  color: #FF7506 !important;
+}
+.react-datepicker__day--selected{
+  background:#FF7506 !important;
+}
+.react-datepicker__navigation-icon--next{
+  color: #FF7506 !important;
+}
 .react-datepicker__input-container {
   position: relative;
 }
-
+.react-datepicker__header {
+  background-color: unset !important;
+  border-bottom: 1px solid #DCDDFD;
+  margin-left: 15px !important;
+  margin-right: 15px !important;
+}
+.react-datepicker__navigation--next {
+  right: 20px !important;
+  color: #FF7506 !important;
+}
 .leveldrow .Dropdown-control{
   width: 154px;
+}
+
+.Dropdown-control {
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: #333;
+  cursor: default;
+  outline: none;
+  padding: 8px 52px 8px 10px;
+  transition: all 200ms ease;
+
+}
+
+.Dropdown-placeholder {
+  height: 20px;
+  line-height: 24px;
 }
 

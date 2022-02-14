@@ -180,7 +180,7 @@ margin-top: 50px;
 
 .modal{
     position: absolute;
-    background: rgba(39, 38, 38, 0.3);
+    /* background: rgba(39, 38, 38, 0.3); */
     
     top: 0;
     left: 0;
@@ -192,7 +192,6 @@ margin-top: 50px;
     display: flex;
     flex-direction: column;
     position: absolute;
-    
     top: 50%;
     left: 50%;
     background: #FFFFFF;
@@ -201,8 +200,21 @@ margin-top: 50px;
     height: 385px;
     transform: translate(-50%, -50%);
     overflow:hidden;
-   
+    animation: show 1.5s ease ;
 }
+
+@keyframes show{
+    from{
+        top:-30%;
+        
+        opacity: 0;
+    }to{
+        top:50%;
+        
+        opacity: 1;
+    }
+}
+
 .modal__item_close{
     font-size:30px;
     color: #FF9138;
