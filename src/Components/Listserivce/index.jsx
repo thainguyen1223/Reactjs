@@ -5,9 +5,10 @@ import Levelgoto from "../image/gotoright.svg";
 import {useState} from 'react'
 function Listserivce(){
 
-    const [codeService , setCodeService] = useState()
-    const [nameService , setNameService] = useState()
-    const [desService , setDesService] = useState()
+    const [codeService , setCodeService] = useState('201')
+    const [nameService , setNameService] = useState('Khám tim mạch')
+    const [desService , setDesService] = useState('')
+
     return(
         <div className={classes.account}>
             <div className={classes.accountinfo}>
@@ -56,7 +57,7 @@ function Listserivce(){
                                     Tên dịch vụ: <span>*</span>
                                 </div>
                                 <div className={classes.serviceCodeinput}>
-                                    <input type="text" value={codeService} onChange={ e=> setNameService(e.target.value)}  />
+                                    <input type="text" value={nameService} onChange={ e=> setNameService(e.target.value)}  />
                                 </div>
                             </div>       
                         </div>

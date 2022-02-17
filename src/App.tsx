@@ -17,7 +17,10 @@ import Updateaccount from './Components/Updateaccount'
 import Diarywork from './Components/Diarywork'
 import Service from './Components/Service'
 import Addservice from './Components/Addservice';
+import Detailservice from './Components/Detailservice';
 function App() {
+
+  
   return (
     <div className="App">
          <Routes>
@@ -39,6 +42,7 @@ function App() {
           <Route path='/dashboard/Diarywork' element={<Diarywork/>}/>
           <Route path='/service' element={<Service/>}/>
           <Route path='/listservice' element={<Addservice/>}/>
+          <Route path='/service/detailservice' element={<Detailservice/>}/>
     </Routes>
     </div>
   );

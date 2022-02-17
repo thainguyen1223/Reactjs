@@ -135,9 +135,11 @@ function Listitemservice(){
                             <img src={green}  alt="green"  className={classes.logo}></img>
                             <p className={classes.serviceitemnametitleid}> Hoạt động </p>    
                         </div>
+                        <Link to ="./detailservice">
                         <div className={classes.serviceitemname} style={{width:"125px"}}>
                             <a href='' className={classes.serviceitemlistnew}> Chi tiết  </a>    
                         </div>
+                        </Link>
                         <div className={classes.serviceitemname} style={{width:"125px"}}>
                             <a href='' className={classes.serviceitemlistnew}> Cập nhật </a>    
                         </div>
