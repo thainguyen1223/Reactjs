@@ -98,12 +98,13 @@ body{
     border: 1px solid #FF9138;
     box-sizing: border-box;
     position: absolute;
-    width: 162px;
+    width: 157px;
     height: 40px;
     left: 118px;
     top: 483px;
     filter: drop-shadow(0px 0px 6px #E7E9F2);
     border-radius: 8px;
+    cursor: pointer;
 
 }
 .sumitright{
@@ -112,13 +113,35 @@ body{
     shadow: 0px 0px 6px #E7E9F2;
     border-radius: 8px;
     position: absolute;
-    width: 162px;
-    height: 40px;
+    width: 109px;
+    height: 20px;
     left: 304px;
     top: 483px;
     color: #FFF;
     cursor: pointer;
 }
+
+.cancel{
+    color: #FF9138;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 37px;
+    text-align: center;
+
+}
+.next{
+    color: #FFF;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+
+}
+.pi
 .right{
     width: 848px;
     height: auto;

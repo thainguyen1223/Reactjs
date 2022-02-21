@@ -2,7 +2,9 @@ import classes from "./Detailservice.module.css"
 import Listitem from '../Listitem'
 import Bellactive from "../Bellactive";
 import React, { useState,useEffect } from "react";
-import levelgoto     from "../image/gotoright.svg";
+import levelgoto from "../image/gotoright.svg";
+import DatePicker from "react-datepicker";
+import Dropdown from 'react-dropdown';
 function Detailservice(){
     return(
         <div className={classes.listservice}>
@@ -75,6 +77,12 @@ function Detailservice(){
                             <div className={classes.example}>
                                 Ví dụ: 201-2001
                             </div>
+                        </div>
+                    </div>
+
+                    <div className={classes.detail__container__table}>
+                        <div className={classes.servicedropdown}>
+                            
                         </div>
                     </div>
                 </div>

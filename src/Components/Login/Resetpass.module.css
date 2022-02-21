@@ -104,12 +104,20 @@ h4{
     shadow: 0px 0px 6px #E7E9F2;
     border-radius: 8px;
     position: absolute;
-    width: 162px;
-    height: 40px;
+    width: 109px;
+    height: 20px;
     left: 208px;
-    top: 550px;
-    color: #FFF;
+    top: 540px; 
     cursor: pointer;
+}
+.confirm{
+    color: #FFF;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
 }
 .right{
     width: 848px;

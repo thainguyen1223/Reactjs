@@ -30,13 +30,14 @@ const Listitem=()=>{
                             </div>
                         </li>
                     </Link>   
-                    
+                    <Link to= '/device'>
                         <li className={classes.listtitle}>
                             <div className={classes.listitem}>
                                 <img src={logo_device} alt='logo_device'/>
                                 <a className={classes.listheight}  href="">Thiết Bị</a>
                             </div>
                         </li>
+                    </Link>
                     <Link to= '/service'>    
                         <li className={classes.listtitle}>
                             <div className={classes.listitem} >
@@ -83,10 +84,10 @@ const Listitem=()=>{
 
                         </li>
                         <Link to='/'>
-                        <button onClick={classes.sumit} className={classes.logout}>
+                        <div className={classes.logout}>
                                 <img src={logo_logout} alt='logo_logout'/>
                                 <a href="" className={classes.color}>Đăng xuất </a>
-                        </button>
+                        </div>
                         </Link>
                     </ul>
                        

@@ -16,13 +16,13 @@ const Forgotpass =()=>{
                     </div>
                     
                     <input type="text" className={classes.title} name="" placeholder=" "/>
-                        <button className={classes.sumitleft} onClick={classes.sumitt}>
-                            Hủy 
-                        </button>
+                        <div className={classes.sumitleft} >
+                            <p className={classes.cancel} >Hủy</p>
+                        </div>
                         <Link to ="/wrong/forgot/reset">
-                        <button className={classes.sumitright} onClick={classes.sumit}> 
-                            Tiếp tục
-                        </button>
+                        <div className={classes.sumitright}> 
+                        <p className={classes.next} >tiếp tục </p>
+                        </div>
                         </Link>
 
             </div>

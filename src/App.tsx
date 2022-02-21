@@ -11,11 +11,12 @@ import {Routes , Route , Link , } from 'react-router-dom'
 import Addlevel from './Components/Addlevel';
 import Information  from './Components/Information';
 import Numberlevel from './Components/Numberlevel';
-import AccountManagement from './Components/AccountManagement'
-import Moreaccount from './Components/Moreaccount'
-import Updateaccount from './Components/Updateaccount'
-import Diarywork from './Components/Diarywork'
-import Service from './Components/Service'
+import AccountManagement from './Components/AccountManagement';
+import Moreaccount from './Components/Moreaccount';
+import Updateaccount from './Components/Updateaccount';
+import Diarywork from './Components/Diarywork';
+import Service from './Components/Service';
+import Device from './Components/Device';
 import Addservice from './Components/Addservice';
 import Detailservice from './Components/Detailservice';
 function App() {
@@ -40,6 +41,7 @@ function App() {
           <Route path='/dashboard/AccountManagement/Moreaccount' element={<Moreaccount/>}/>
           <Route path='/dashboard/AccountManagement/Updateaccount' element={<Updateaccount/>}/>
           <Route path='/dashboard/Diarywork' element={<Diarywork/>}/>
+          <Route path='/Device' element={<Device/>}/>
           <Route path='/service' element={<Service/>}/>
           <Route path='/listservice' element={<Addservice/>}/>
           <Route path='/service/detailservice' element={<Detailservice/>}/>

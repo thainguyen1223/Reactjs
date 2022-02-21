@@ -21,7 +21,9 @@ const Login =()=>{
                         
                     </div>
                     <Link to="/wrong">
-                    <button className={classes.sumit} > Đăng nhập </button>
+                        <div className={classes.sumit} > 
+                            <p className={classes.log__in} >Đăng nhập</p>
+                        </div>
                     </Link>
             </div>
             <div className={classes.right}>

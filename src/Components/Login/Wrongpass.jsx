@@ -28,7 +28,9 @@ const Wrongpass =()=>{
                             </div>
                         </Link>
                     </div>
-                    <button className={classes.sumit} clonClick={classes.sumit}> Đăng nhập </button>
+                        <div className={classes.sumit} > 
+                            <p className={classes.log__in} >Đăng nhập</p>
+                        </div>
                     <div className={classes.pass}>Quên mật khẩu? </div>
             </div>
             <div className={classes.right}>

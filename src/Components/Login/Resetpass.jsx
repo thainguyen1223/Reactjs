@@ -25,7 +25,9 @@ const Login =()=>{
                         
                     </div>
                     < Link to='/account'>
-                    <button className={classes.sumit} clonClick={classes.sumit}> Xác nhận </button>
+                        <div className={classes.sumit} > 
+                            <p className={classes.confirm} >Xác nhận</p>
+                        </div>
                     </Link>
             </div>
             <div className={classes.right}>
