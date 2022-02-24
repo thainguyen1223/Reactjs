@@ -1,0 +1,108 @@
+.level{
+    /* margin-left: 20px; */
+    position: relative;
+}
+.levelinfo{
+      display:flex;
+      justify-content:space-between;
+      /* padding: 20px 0px; */
+}
+  
+.levelinfolist{
+      display: flex;
+      align-items: center;
+}
+.leveltitle{
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 30px;
+      color: #7E7D88;
+}
+  
+.levelgoto{
+      color: #7E7D88;
+      padding-left: 10px;
+      padding-right: 10px;
+}
+  
+.levellist{
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 30px;
+      color: #FF7506;
+  
+}
+  
+.bell{
+    padding-right: 40px;
+}
+
+.levelcontainer{
+    margin-top: 38px;
+    display: flex;
+    flex-direction: column;
+    width: 92%;
+}
+
+.listadd{
+    display: flex;
+    flex-direction: column
+}
+
+.levellisttitle{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #282739;
+
+}
+
+.leveldrowcalendar{
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+    margin-top:5px;
+      
+}
+.goright{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.reportcontainer{
+    margin-top: 38px;
+    display: flex;
+    flex-direction: column;
+    width: 92%;
+}
+.levellistdrow{
+    display: flex;
+    color: white;
+    width: 100%;
+    background: #FF9138;
+}
+
+.listitemdrow{
+    width: 20%;
+    overflow: unset
+}
+
+.levelitem{
+    background: #FF9138;
+
+}
+
+.levelitem .Dropdown-control {
+    width: 100%;
+    height: 100%;
+    border-radius: unset !important;
+    background: #FF9138 !important;
+    color: white;
+    padding: 13px 52px 33px 10px;
+    position: relative;
+}

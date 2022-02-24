@@ -121,14 +121,14 @@ function Accountinformation(){
                   
             </div>
             <div className={classes.userbutton}>
-            <Link to ='/dashboard/AccountManagement'>
-            <button className={classes.cannel}>
-                <a href="" className={classes.canneltitle}>Hủy bỏ  </a>
-            </button>
-            </Link>
-            <button className={classes.more}>
-                <a href="" className={classes.moretitle}>Thêm  </a>
-            </button>
+                <Link to ='/dashboard/AccountManagement'>
+                <div className={classes.cannel}>
+                    <a href="" className={classes.canneltitle}>Hủy bỏ  </a>
+                </div>
+                </Link>
+                <div     className={classes.more}>
+                    <a href="" className={classes.moretitle}>Thêm  </a>
+                </div>
             </div>
         </div>
     </div>

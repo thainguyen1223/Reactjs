@@ -54,12 +54,14 @@ const Listitem=()=>{
                             </div>
                         </li>
                     </Link>    
+                    <Link to= '/report'>
                         <li className={classes.listtitle}>
                             <div className={classes.listitem} >
                                 <img src={log_report} alt='log_report'/>
                                 <a className={classes.listheight} href="">Báo cáo</a>
                             </div>
                         </li>
+                    </Link>
                         <li className={classes.listtitle}
                         
                         onMouseEnter={()=>setInfo(true)} onMouseLeave={()=>setInfo(false)}
@@ -72,7 +74,9 @@ const Listitem=()=>{
                                 </a>
                             </div>
                             { info &&   <div className={classes.subnav}>
+                                    <Link to= '/dashboard/RoleManagement'>
                                     <li><a href="#">Quản lý vai trò</a></li>
+                                    </Link>
                                     <Link to='/dashboard/AccountManagement'>
                                     <li><a href="#">Quản lý tài khoản</a></li>
                                     </Link>

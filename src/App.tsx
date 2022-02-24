@@ -17,8 +17,12 @@ import Updateaccount from './Components/Updateaccount';
 import Diarywork from './Components/Diarywork';
 import Service from './Components/Service';
 import Device from './Components/Device';
+import Adddevice from './Components/Adddevice';
 import Addservice from './Components/Addservice';
 import Detailservice from './Components/Detailservice';
+import Report from './Components/Report'
+import RoleManagement from './Components/RoleManagement'
+import AddRole from './Components/AddRole'
 function App() {
 
   
@@ -42,8 +46,12 @@ function App() {
           <Route path='/dashboard/AccountManagement/Updateaccount' element={<Updateaccount/>}/>
           <Route path='/dashboard/Diarywork' element={<Diarywork/>}/>
           <Route path='/Device' element={<Device/>}/>
+          <Route path='/Device/add-device' element={<Adddevice/>}/>
           <Route path='/service' element={<Service/>}/>
+          <Route path='/report' element={<Report/>}/>
           <Route path='/listservice' element={<Addservice/>}/>
+          <Route path='/dashboard/RoleManagement' element={<RoleManagement/>}/>
+          <Route path='/dashboard/RoleManagement/add-role-management' element={<AddRole/>}/>
           <Route path='/service/detailservice' element={<Detailservice/>}/>
     </Routes>
     </div>

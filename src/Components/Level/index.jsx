@@ -101,7 +101,7 @@ function Level(){
 
             <div className={classes.levelcontainer}>
                 <div className={classes.levellisttitle}>
-                Quản lý cấp số
+                    Quản lý cấp số
                 </div>
                 <div className={classes.levellistdrow}>
                     <div className={classes.listitemdrow}>
@@ -160,7 +160,7 @@ function Level(){
 
                 <div className={classes.tablelistitem}>
 
-                            <div className={classes.leveltable}>
+                        <div className={classes.leveltable}>
                             <div className={classes.levelitemname} style={{width:"93px"}}>
                                 <p className={classes.levelitemnametitle}> STT </p>    
                             </div>
