@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import Levelgoto from "../image/gotoright.svg";
 import blue from '../image/blue.svg'
 import back from "../image/back.svg"
+
 function Detail(){
     return(
         <div className={classes.detail}>

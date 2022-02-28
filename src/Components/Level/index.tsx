@@ -4,9 +4,8 @@ import {Link} from 'react-router-dom';
 
 import Levelgoto from "../image/gotoright.svg";
 import {useState, useEffect} from 'react';
-import axios from "axios";
 import Dropdown from 'react-dropdown';
-import 'react-dropdown/style.css';
+import '../style/style.css';
 import DatePicker from "react-datepicker";
 import plus from "../image/plus.svg";
 import "react-datepicker/dist/react-datepicker.css";
@@ -17,70 +16,141 @@ import blue from '../image/blue.svg'
 import red from '../image/red.svg'
 import black from '../image/black.svg'
 
-
-function Level(){
-    const [startDate, setStartDate] = useState(new Date());
-    const [data, setData] = useState([])
-
-    const optionslevel = [
-        'Tất cả', 'Khám sản - Phụ khoa', 'Khám răng hàm mặt','Khám tai mũi họng'
-      ];
-      const sumitlevel =(e)=>{
-          console.log(e.value)
-      }
-      const defaultOptionlevel = optionslevel[0];
-    const optionsstatus = [
-        'Tất cả', 'Đang chờ', 'Đã sử dụng','Bỏ qua'
-      ];
-
-      const [status,setStatus] = useState()
-      const sumitstatus =(e)=>{
-        if(e.value === 'Đang chờ'){
-            setStatus(blue)
-
-          }else if(e.value === 'Đã sử dụng'){
-            setStatus(black)
-          }else if(e.value === 'Bỏ qua'){
-            setStatus(red)
-          }
-      }
-      const defaultOptionstatus = optionsstatus[0];
-
-      const optionspower = [
-        'Tất cả', 'Kiosk', 'Hệ thống'
-      ];
-      const sumitpower =(e)=>{
-          console.log(e.value)
-      }
-      const defaultOptionspower = optionspower[0];
-      
-   
-    const [search , setSearch] = useState('')
+import {fetchData,SENDDATA} from '../../redux/DatAlta/DataAltaActions'
+import {connect} from 'react-redux';
 
 
-      useEffect( async ()=>{
-        const response = await axios.get('https://reactjs-648cf-default-rtdb.asia-southeast1.firebasedatabase.app/datalevel.json');
-        let temp = []
-        console.log(response.data);
-        for (let i in response.data){
-            temp.push({
-                STT: response.data[i].STT,
-                expiry: response.data[i].expiry,
-                name: response.data[i].name,
-                service: response.data[i].service,
-                source: response.data[i].sourse,
-                status: response.data[i].status,
-                time: response.data[i].time,
-            })
-        }
-        setData(temp)
+
+function Level({dataTable,fetchData,SENDDATA }:any){
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+  const ServiceWaitPoint = ()=>{
+    return (
+            <><span className="blue">
+              <img src={blue}></img>
+              </span><span>Đang chờ</span></>
+    )
+}  
+
+
+const ServiceUsedPoint = ()=>{
+return (
+        <><span className="black">
+            <img src={black} ></img>
+            
+          </span><span>Đã sử dụng</span></>
+)
+}  
+
+
+const ServiceUnactivePoint = ()=>{
+      return (  <><span className="red">
         
-      },[])
+        <img src={red}></img>
+        </span><span>Bỏ qua</span></>
+      
+      ) 
+}
+
+const dataNumberLevel = dataTable.dataNumberLevel
+const [data,setData] = useState(dataNumberLevel)
+    
+const optionService = [
+    'Tất cả', 'Khám sản - Phụ khoa', 'Khám răng hàm mặt','Khám tai mũi họng'
+  ];
+
+  const handleDropdownValue = (e:any)=>{
+
+
+    if(e.value == "Đang chờ"){
+        const filterdata =  dataNumberLevel.filter( (item:any) =>  item.status === "Đang chờ")
+         setData(filterdata)
+        
+    }else if(e.value == "Đã sử dụng"){
+
+        const filterdata =  dataNumberLevel.filter((item:any)  =>  item.status === "Đã sử dụng")
+        setData(filterdata)
+    }
+    else if(e.value == "Bỏ qua"){
+
+        const filterdata =  dataNumberLevel.filter((item:any)  =>  item.status === "Bỏ qua")
+        setData(filterdata)
+    }else if(e.value == "Khám răng hàm mặt"){
+
+        const filterdata =  dataNumberLevel.filter((item:any)  =>  item.service === "Khám răng hàm mặt")
+        setData(filterdata)
+    }
+    else if(e.value == "Khám tai mũi họng"){
+
+        const filterdata =  dataNumberLevel.filter((item:any)  =>  item.service === "Khám tai mũi họng")
+        setData(filterdata)
+    }
+    else if(e.value == "Khám sản - Phụ khoa"){
+
+        const filterdata =  dataNumberLevel.filter((item:any)  =>  item.service === "Khám sản - Phụ khoa")
+        setData(filterdata)
+    }
+    else if(e.value == "Kiosk"){
+
+        const filterdata =  dataNumberLevel.filter((item:any)  =>  item.sourse === "Kiosk")
+        setData(filterdata)
+    }
+    else if(e.value == "Hệ thống"){
+
+        const filterdata =  dataNumberLevel.filter((item:any) =>  item.sourse === "Hệ thống")
+        setData(filterdata)
+    }
+    
+    else{
+        setData(dataNumberLevel)
+    }
+
+
+    
+    
+    
+    
+     
+}
+const defaultOptionService = optionService[0];
+
+
+
+
+const optionState = [
+'Tất cả', 'Đang chờ', 'Đã sử dụng','Bỏ qua'
+];
+
+const optionSource = [
+'Tất cả', 'Kiosk', 'Hệ thống'
+];
+
+
+    
+let handleSend = (item:any)=>{
+                
+
+  SENDDATA(item)
   
-      let color = black
-      let trangThai = ""
+  
+  
+}
+  
+
+    
+    const [showMore , setShowMore] = useState(false)
+
+    const [search , setSeatch] = useState('')
+
+    const [startDate, setStartDate] = useState<Date | null>(new Date());
+
+
+
 
     return(
+
         <div className={classes.level}>
             <div className={classes.levelinfo}>
                 <div className={classes.levelinfolist}>
@@ -109,28 +179,28 @@ function Level(){
                             <div className={classes.levelitem}>
                                     <div className={classes.levelname}>Tên dịch vụ</div>
                                     <div className={classes.leveldrow}>
-                                    <Dropdown options={optionslevel} 
+                                    <Dropdown options={optionService} 
                                        
-                                       onChange={(e)=>sumitlevel(e)} 
-                                       value={defaultOptionlevel} placeholder="Select an option" />
+                                       onChange={(e)=>handleDropdownValue(e)} 
+                                       value={defaultOptionService} placeholder="Select an option" />
                                         
                                     </div>
                             </div>
                             <div className={classes.levelitem}>
                                     <div className={classes.levelname}>Tình trạng</div>
                                     <div className={classes.leveldrow}>
-                                    <Dropdown options={optionsstatus}   
-                                                onChange={(e)=>sumitstatus(e)} 
-                                                value={defaultOptionstatus} placeholder="Select an option" />
+                                    <Dropdown options={optionState}   
+                                                onChange={(e)=>handleDropdownValue(e)} 
+                                                value={defaultOptionService} placeholder="Select an option" />
                                                
                                     </div>
                             </div>
                             <div className={classes.levelitem}>
                                     <div className={classes.levelname}>Nguồn cấp</div>
                                     <div className={classes.leveldrow}>
-                                    <Dropdown options={optionspower} 
-                                            onChange={(e)=>sumitpower(e)} 
-                                            value={defaultOptionspower} placeholder="Select an option" />
+                                    <Dropdown options={optionSource} 
+                                            onChange={(e)=>handleDropdownValue(e)} 
+                                            value={defaultOptionService} placeholder="Select an option" />
                                     </div>
                             </div>
 
@@ -148,10 +218,10 @@ function Level(){
                             
                             <div className={classes.levelname}>Từ khoá</div>
                                 <div className={classes.searchinput}>
-                                    <input placeholder="Nhập từ khóa" value={search} onChange={(e)=> setSearch(e.target.value)}/>
-                                    <a href="" className={classes.fi_search}>
+                                    <input placeholder="Nhập từ khóa" value={search} onChange={(e)=> setSeatch(e.target.value)}/>
+                                    <div className={classes.fi_search}>
                                     <img src={fi_search} alt="" />
-                                </a>
+                                </div>
                             </div>
                     </div>
                     </div>
@@ -187,28 +257,10 @@ function Level(){
                     
                         </div>
 
-                   
-                   {data.map((item)=>{
-                       switch(item.status.trim()){
-                           case "pending": 
-                                color = blue
-                                trangThai = "Đang chờ"
-                                break;
-                            case "used":
-                                color = black
-                                trangThai = "Đã sử dụng"
-                                break;
-                            case "next":
-                                color = red
-                                trangThai= "Bỏ qua"
-                                break;
-                            default:
-                                color = red
-                                trangThai= "Error"
-                       }
-                    return(
-                        <div className={classes.leveltablelist}>
-                        <div className={classes.levelitemnameid} style={{width:"93px"}}>
+                        {
+                            data.map ( (item:any,index:any)=>
+                        <div className={classes.leveltablelist}key={index} >
+                        <div className={classes.levelitemname} style={{width:"93px"}}>
                             <p className={classes.levelitemnametitleid}>{item.STT}</p>    
                         </div>
                         <div className={classes.levelitemname} style={{width:"162px"}}>
@@ -218,25 +270,31 @@ function Level(){
                             <p className={classes.levelitemnametitleid}>{item.service}</p>    
                         </div>
                         <div className={classes.levelitemname} style={{width:"161px"}}>
-                            <p className={classes.levelitemnametitleid}> 14:35 - 07/11/2021 </p>    
+                            <p className={classes.levelitemnametitleid}> {item.time1} </p>    
                         </div>
                         <div className={classes.levelitemname} style={{width:"174px"}}>
-                            <p className={classes.levelitemnametitleid}> 14:35 - 12/11/2021 </p>    
+                            <p className={classes.levelitemnametitleid}> {item.time2} </p>    
                         </div>
                         <div className={classes.levelitemname} style={{width:"147px"}}>
-                            <img src={color} alt="blue" className={classes.logo}></img>
-                            <p className={classes.levelitemnametitleid}>{trangThai}</p>    
+                        <p className={`${classes.levelitemnametitleid} ${classes.id}`}>  
+                              {item.status == 'Đang chờ' && <ServiceWaitPoint/>}
+                              {item.status == 'Đã sử dụng' && <ServiceUsedPoint/>}
+                              {item.status == 'Bỏ qua' && <ServiceUnactivePoint/>}
+                          </p>
                         </div>
                         <div className={classes.levelitemname} style={{width:"120px"}}>
-                            <p className={classes.levelitemnametitleid}>{item.source}</p>    
+                            <p className={classes.levelitemnametitleid}>{item.sourse}</p>    
                         </div>
                      
-                        <a href=""  className={classes.levelitemlistnew}  > chi tiết </a>
+                        <div  className={classes.levelitemlistnew}   onClick={()=> handleSend(item)} 
+                        
+                        > <Link to="/level/service">
+                                    Chi tiết
+                        </Link>   </div>
              
  
                         </div>
-                    )
-                    })}
+                  )}
 
 
 
@@ -261,7 +319,30 @@ function Level(){
             
             
         </div>
+    
     )
 }
 
-export default Level;
+const mapStateToProps = (state:any) =>{
+  return {
+
+    dataTable:state.dataAlta
+
+   
+      
+      
+      
+  }
+}
+
+const mapDispatchToProps = (dispatch:any) =>{
+  return {
+
+          fetchData: ()=>  dispatch(fetchData()),
+          SENDDATA: (data:any)=> dispatch(SENDDATA(data))
+    
+  }
+}
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(Level)

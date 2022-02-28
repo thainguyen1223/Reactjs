@@ -11,7 +11,10 @@ function Bellactive(){
                     onMouseEnter={()=>setIsShow(true)} 
                     > <img src ={isShow ? bellActive : bell} ali="bell" className={classes.bell}></img> 
         </p>
-            { isShow &&  <div className={classes.notify} onMouseLeave={()=>setIsShow(false)}>
+
+           { isShow &&    <div className={classes.notify}
+            
+            onMouseLeave={()=>setIsShow(false)}>
                     <header className={classes.notifyheader}>
                             <p className={classes.notifytitle}>Thông báo </p>
                     </header>
@@ -60,9 +63,23 @@ function Bellactive(){
                             </a>
                         </div>
 
+                        <div className={classes.notifylink}>
+                            <a href="#"> 
+                                <p className={classes.notifyname}>Người dùng: Nguyễn Thị Trúc Anh</p>
+                                <p className={classes.notifytime}>Thời gian nhận số: 12h20 ngày 30/11/2021</p>
+                            </a>
+                        </div>
+
+                        <div className={classes.notifylink}>
+                            <a href="#"> 
+                                <p className={classes.notifyname}>Người dùng: Nguyễn Thị Trúc Anh</p>
+                                <p className={classes.notifytime}>Thời gian nhận số: 12h20 ngày 30/11/2021</p>
+                            </a>
+                        </div>
+
                     </div>
             </div>
-            }
+        }
         <div className={classes.dashboadavata}>
             <img src={avata} alt="avata" ></img>
         </div>

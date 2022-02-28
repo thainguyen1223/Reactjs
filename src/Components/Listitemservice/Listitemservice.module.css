@@ -153,7 +153,9 @@
     width: 100%;
     background: #FFFFFF;
 }
-
+.servicetablelist:nth-child(2n+1){
+    background: #FFF2E7;
+}
 .servicetablelistid{
     display: flex;
     color:white;

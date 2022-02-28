@@ -35,9 +35,9 @@ function Levelnumber(){
                     Cấp số mới
                 </p>
             </div>
-            {/* <div className={classes.bell}>
+            <div className={classes.bell}>
                 <Bellactive/>
-            </div> */}
+            </div>
         </div>
         <div className={classes.levelcontainer}>
             <div className={classes.levellisttitle}>

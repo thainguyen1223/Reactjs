@@ -7,7 +7,7 @@ const Forgotpass =()=>{
     return(
         <div className={classes.login}>
             <div className={classes.left}>
-                <img src={alta} ali='pic1'className={classes.alta} ></img>     
+                <img src={alta} alt='pic1'className={classes.alta} ></img>     
                     <div className={classes.pass}>
                         <p className={classes.passtitle}>Đặt lại mật khẩu </p>
                     </div>
@@ -27,7 +27,7 @@ const Forgotpass =()=>{
 
             </div>
             <div className={classes.right}>
-                    <img src={Frame} ali='frame' className={classes.frame}></img>
+                    <img src={Frame} alt='frame' className={classes.frame}></img>
                 
             </div>
         </div>

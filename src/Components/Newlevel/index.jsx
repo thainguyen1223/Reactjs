@@ -2,7 +2,7 @@ import classes from "./Newlevel.module.css"
 import Bellactive from "../Bellactive";
 import {Link} from 'react-router-dom';
 import Levelgoto from "../image/gotoright.svg";
-import dele from "../image/fi_x.svg";
+
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 import React, {useState} from 'react';

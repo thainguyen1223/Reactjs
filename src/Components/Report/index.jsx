@@ -1,11 +1,11 @@
-import classes from './Report.module.css'
+import classes from './Report.css'
 import Listitem from '../Listitem'
 import Listreport from '../Listreport'
 function Report(){
     return(
-        <div className={classes.listlevel}>
+        <div className='listlevel'>
             <Listitem/>
-            <div className={classes.listlevelright}>
+            <div className='listlevelright'>
                 <Listreport/>
             </div>
         </div>

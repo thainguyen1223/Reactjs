@@ -2,7 +2,8 @@ import {useState} from "react";
 
 import classes from "./Menubar.module.css"
 import bell from "../image/bell.png"
-import bellActive from "../image/bellActive.png"
+import Bellactive from "../Bellactive";
+
 import avata from "../image/avata.svg"
 import pencentblue from "../image/pencentblue.png"
 import pencentgreen from "../image/pencentgreen.png"
@@ -12,7 +13,7 @@ import service_blue from "../image/service_blue.svg"
 import level_green from "../image/level_green.svg"
 import DatePicker from 'sassy-datepicker';
 function Menubar(){
-    const [isShow, setIsShow] = useState(false);
+    const [isShow, setIsShow] = useState(true);
         const [date, setDate] = useState(new Date());
     const onChange = newDate => {
         console.log(`New date selected - ${newDate.toString()}`);
@@ -27,74 +28,9 @@ function Menubar(){
     return(
         
         <div className={classes.dashboadright}>
-                <div className={classes.dashboadtop}>
-                    <div className={classes.dashboadbell}>
-                    <p 
-                         onMouseEnter={()=>setIsShow(true)} 
-                        > <img src ={isShow ? bellActive : bell} ali="bell" className={classes.bell}></img> 
-                        </p>
-                        { isShow &&  <div className={classes.notify} onMouseLeave={()=>setIsShow(false)}>
-                             <header className={classes.notifyheader}>
-                                <p className={classes.notifytitle}>Thông báo </p>
-                            </header>
-                                <div className={classes.notifylist}>
-                                <div className={classes.notifylink}>
-                                   <a href="#"> 
-                                       <p className={classes.notifyname}>Người dùng: Nguyễn Thị Thùy Dung</p>
-                                       <p className={classes.notifytime}>Thời gian nhận số: 12h20 ngày 30/11/2021</p>
-                                   </a>
-                               </div>
-
-
-                               <div className={classes.notifylink}>
-                                   <a href="#"> 
-                                       <p className={classes.notifyname}>Người dùng: Nguyễn Thiên Chinh</p>
-                                       <p className={classes.notifytime}>Thời gian nhận số: 12h20 ngày 30/11/2021</p>
-                                   </a>
-                               </div>
-
-                               <div className={classes.notifylink}>
-                                   <a href="#"> 
-                                       <p className={classes.notifyname}>Người dùng: Võ Thị Kim Liên</p>
-                                       <p className={classes.notifytime}>Thời gian nhận số: 12h20 ngày 30/11/2021</p>
-                                   </a>
-                               </div>
-
-
-                               <div className={classes.notifylink}>
-                                   <a href="#"> 
-                                       <p className={classes.notifyname}>Người dùng: Hoàng Nguyễn Quốc Huy</p>
-                                       <p className={classes.notifytime}>Thời gian nhận số: 12h20 ngày 30/11/2021</p>
-                                   </a>
-                               </div>
-
-                               <div className={classes.notifylink}>
-                                   <a href="#"> 
-                                       <p className={classes.notifyname}>Người dùng: Võ Ngọc Lan Anh</p>
-                                       <p className={classes.notifytime}>Thời gian nhận số: 12h20 ngày 30/11/2021</p>
-                                   </a>
-                               </div>
-
-                               <div className={classes.notifylink}>
-                                   <a href="#"> 
-                                       <p className={classes.notifyname}>Người dùng: Nguyễn Thị Trúc Anh</p>
-                                       <p className={classes.notifytime}>Thời gian nhận số: 12h20 ngày 30/11/2021</p>
-                                   </a>
-                               </div>
-
-                                </div>
-                            </div>
-}
-                    </div>
-                    <div className={classes.dashboadavata}>
-                        <img src={avata} alt="avata" ></img>
-                    </div>
-                    <div className={classes.dashboaditemtitle}>
-                        <p className={classes.dashboaditemtop}>Xin chào </p>
-                        <p className={classes.dashboaditembottom}>Lê Quỳnh Ái Vân </p>
-                    </div>
-                </div>
-           
+            <div className={classes.bell}>
+                <Bellactive/>
+            </div>
                 <p className={classes.title}>Tổng quan</p>            
 
                 <div className={classes.listcolurm}>

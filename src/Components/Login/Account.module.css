@@ -3,7 +3,9 @@
     margin: 0;
 }
 
-
+.bell{
+    margin-left: 10px;
+}
 .main {
     width: 1440px;
     height: 810px;

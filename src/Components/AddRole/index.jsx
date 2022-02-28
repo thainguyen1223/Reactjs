@@ -82,11 +82,116 @@ function AddRole(){
                                     </div>
 
                                     <div className={classes.tablelcontainer__left}>
+                                        <div className={classes.table__title}>
+                                            <p className={classes.title}> Phân quyền chức năng </p> 
+                                            <img src={star} alt='star' className={classes.starid}></img>
+                                        </div>
+                                        <div className={classes.tablelist}>
+                                            <div className={classes.tablelistgroup}>
+                                                <div className={classes.tablegroupA}>
+                                                        Nhóm chức năng A
+                                                </div>
+
+                                                <div className={classes.tablegroup___checkbox}>
+                                                    <div className={classes.tablegroup___item}>
+                                                        <input type="checkbox"/> 
+                                                        <p className={classes.tablegroup___title}>Tất cả</p>
+                                                    </div> 
+
+                                                    <div className={classes.tablegroup___item}>
+                                                        <input type="checkbox"/> 
+                                                        <p className={classes.tablegroup___title}>Chức năng x</p>
+                                                    </div> 
+
+                                                    <div className={classes.tablegroup___item}>
+                                                        <input type="checkbox"/> 
+                                                        <p className={classes.tablegroup___title}>Chức năng y</p>
+                                                    </div> 
+
+                                                    <div className={classes.tablegroup___item}>
+                                                        <input type="checkbox"/> 
+                                                        <p className={classes.tablegroup___title}>Chức năng z</p>
+                                                    </div> 
+                                                </div>
+                                            </div>
+
+                                            <div className={classes.tablelistgroup}>
+                                                <div className={classes.tablegroupA}>
+                                                        Nhóm chức năng B
+                                                </div>
+
+                                                <div className={classes.tablegroup___checkbox}>
+                                                    <div className={classes.tablegroup___item}>
+                                                        <input type="checkbox"/> 
+                                                        <p className={classes.tablegroup___title}>Tất cả</p>
+                                                    </div> 
+
+                                                    <div className={classes.tablegroup___item}>
+                                                        <input type="checkbox"/> 
+                                                        <p className={classes.tablegroup___title}>Chức năng x</p>
+                                                    </div> 
+
+                                                    <div className={classes.tablegroup___item}>
+                                                        <input type="checkbox"/> 
+                                                        <p className={classes.tablegroup___title}>Chức năng y</p>
+                                                    </div> 
+
+                                                    <div className={classes.tablegroup___item}>
+                                                        <input type="checkbox"/> 
+                                                        <p className={classes.tablegroup___title}>Chức năng z</p>
+                                                    </div> 
+                                                </div>
+                                            </div>
+
+
+                                            <div className={classes.tablelistgroup}>
+                                                <div className={classes.tablegroupA}>
+                                                        Nhóm chức năng C
+                                                </div>
+
+                                                <div className={classes.tablegroup___checkbox}>
+                                                    <div className={classes.tablegroup___item}>
+                                                        <input type="checkbox"/> 
+                                                        <p className={classes.tablegroup___title}>Tất cả</p>
+                                                    </div> 
+
+                                                    <div className={classes.tablegroup___item}>
+                                                        <input type="checkbox"/> 
+                                                        <p className={classes.tablegroup___title}>Chức năng x</p>
+                                                    </div> 
+
+                                                    <div className={classes.tablegroup___item}>
+                                                        <input type="checkbox"/> 
+                                                        <p className={classes.tablegroup___title}>Chức năng y</p>
+                                                    </div> 
+
+                                                    <div className={classes.tablegroup___item}>
+                                                        <input type="checkbox"/> 
+                                                        <p className={classes.tablegroup___title}>Chức năng z</p>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
                                         
                                     </div>
                                 </div>
+
+
                             </div>
+
+                            <div className={classes.contaniner__button}>
+                                <div className={classes.contaniner__cancel}>
+                                    <Link to="/dashboard/RoleManagement"><button>Hủy bỏ</button></Link>
+                                </div>
+                                <div className={classes.contaniner__addrole}>
+                                    <button>Thêm dịch vụ</button>
+                                </div>
+                             </div>
                     </div>
+
+                    
+
                 </div>
             </div>
         </div>

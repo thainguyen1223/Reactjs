@@ -80,7 +80,7 @@
 }
 
 .levelitem{
-    margin-right: 30px;
+    margin-right: 20px;
   
 }
 .listitem{
@@ -133,7 +133,7 @@
     border: 1.5px solid #D4D4D7;
     box-sizing: border-box;
     border-radius: 8px;
-    width: 217px;
+    width: 250px;
     height: 44px;
 }
 
@@ -156,6 +156,7 @@
     color:white;
     width: 100%;
     background: #FFFFFF;
+
 }
 .leveltablelistid{
     display: flex;
@@ -197,6 +198,7 @@
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
+
 }
 
 
@@ -276,3 +278,17 @@
     display:flex;
     justify-content: flex-end;
 }
+.id{
+    /* margin-left: -10px; */
+}
+
+.id span{
+   
+    margin-left: 4px;
+}
+
+.leveltablelist:nth-child(2n+1){
+    background: #FFF2E7;
+
+}
+

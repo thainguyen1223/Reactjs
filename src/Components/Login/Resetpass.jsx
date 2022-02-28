@@ -10,17 +10,17 @@ const Login =()=>{
     return(
         <div className={classes.login}>
             <div className={classes.left}>   
-                <img src={alta} ali='pic1'className={classes.alta} ></img>   
+                <img src={alta} alt='pic1'className={classes.alta} ></img>   
                 <h4>Đặt lại mật khẩu mới </h4>
                     <div className={classes.login1}>
                    
                         <div className={classes.name}>Mật khẩu  </div>
                         <input type="password" className={classes.title} name="" placeholder="*****"/>
-                        <img src={eyeclose}  ali='eyeclose'className={classes.eyeclose}  ></img>
+                        <img src={eyeclose}  alt='eyeclose'className={classes.eyeclose}  ></img>
                         
                         <div className={classes.password}>Nhập lại mật khẩu  </div>
                         <input type="password"  className={classes.title} name="" placeholder="****"/>
-                        <img src={eyeclose}  ali='eyeclose'className={classes.eyeclosepass}  ></img>
+                        <img src={eyeclose}  alt='eyeclose'className={classes.eyeclosepass}  ></img>
                         
                         
                     </div>
@@ -31,9 +31,9 @@ const Login =()=>{
                     </Link>
             </div>
             <div className={classes.right}>
-                    <img src={pic5} ali='pic5' className={classes.pic5}></img>
-                    <img src={pic8} ali='pic8'className={classes.pic8} ></img>
-                    <img src={pic6} ali='pic6'className={classes.pic6} ></img>
+                    <img src={pic5} alt='pic5' className={classes.pic5}></img>
+                    <img src={pic8} alt='pic8'className={classes.pic8} ></img>
+                    <img src={pic6} alt='pic6'className={classes.pic6} ></img>
             </div>
         </div>
     )

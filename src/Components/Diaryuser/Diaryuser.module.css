@@ -1,23 +1,25 @@
-.account{
+.diary{
     position: relative;
 }
-.levelgoto{
+.diarygoto{
     color: #7E7D88;
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.accountinfo{
+.diaryinfo{
     display:flex;
     justify-content:space-between;
     /* padding: 20px 0px; */
 }
-
-.accountinfolist{
+.diarytablelist:nth-child(2n+1){
+    background: #FFF2E7;
+}
+.diaryinfolist{
     display: flex;
     align-items: center;
 }
-.accounttitle{
+.diarytitle{
     font-family: Nunito;
     font-style: normal;
     font-weight: bold;
@@ -26,13 +28,13 @@
     color: #7E7D88;
 }
 
-.accountgoto{
+.diarygoto{
     color: #7E7D88;
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.accountlist{
+.diarylist{
     font-family: Nunito;
     font-style: normal;
     font-weight: bold;
@@ -46,7 +48,7 @@
     padding-right: 40px;
 }
 
-.accountcontainer{
+.diarycontainer{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -55,7 +57,7 @@
     display: flex;
     flex-direction: column
 } */
-.accountlisttitle{
+.diarylisttitle{
     font-family: Nunito;
     font-style: normal;
     font-weight: bold;
@@ -65,23 +67,23 @@
 
 }
 
-.accountlistitem{
+.diarylistitem{
     width: 1005;
 
 }
 
-.accountlistdrow{
+.diarylistdrow{
     display: flex;
     margin-top: 20px;
     justify-content: space-between;
 }
 
-.accountitemdrow{
+.diaryitemdrow{
     display: flex;
     justify-content: space-between; 
     
 }
-.accountitem{
+.diaryitem{
     margin-right: 20px;
   
 }
@@ -96,7 +98,7 @@
     padding-left: 5px;
     padding-right: 5px;
 }
-.accountname{
+.diaryname{
     font-family: Nunito;
     font-style: normal;
     font-weight: 600;
@@ -104,16 +106,16 @@
     line-height: 24px;
     color: #282739;
 }
-.accountdrow{
+.diarydrow{
    width: 300px;
    
 } 
-.leveldrowcalendar{
+.diarydrowcalendar{
     display: flex;
     align-items: center;
     margin-top: 5px;
 }
-.accountdrow input{
+.diarydrow input{
     padding: 10px 16px 10px 12px;   
     background: #FFFFFF;
     border: 1.5px solid #D4D4D7;
@@ -140,7 +142,7 @@
     margin-top:20px;
 }
 
-.leveltable{
+.diarytable{
     /* display: grid;
     grid-template-columns: 93px 162px 171px 161px 174px 147px 120px 78px; */
     display: flex;
@@ -148,21 +150,21 @@
     width: 100%;
     background: #FF9138;
 }
-.leveltablelist{
+.diarytablelist{
     display: flex;
     color:white;
     width: 100%;
     background: #FFFFFF;
 }
 
-.leveltablelistid{
+.diarytablelistid{
     display: flex;
     color:white;
     width: 100%;
     background: #FFF2E7;
 }
 
-.levelitemname{
+.diaryitemname{
     display: flex;
     flex-direction: row;
     align-items:center;
@@ -170,7 +172,7 @@
     border-right: 1px solid #FFE3CD
 }
 
-.levelitemnametitle{
+.diaryitemnametitle{
     margin-left: 10px;
     font-family: Nunito;
     font-style: normal;
@@ -181,7 +183,7 @@
     color: #FFFFFF;
 }
 
-.levelitemnametitle{
+.diaryitemnametitle{
     margin-left: 10px;
     font-family: Nunito;
     font-style: normal;
@@ -192,7 +194,7 @@
     
 }
 
-.levelitemlist{
+.diaryitemlist{
     font-family: Nunito;
     font-style: normal;
     font-weight: normal;
@@ -201,7 +203,7 @@
     color: #535261;
     margin-left: 10px;
 }
-.levelitemnameid{
+.diaryitemnameid{
     display: flex;
     flex-direction: row;
     align-items:center;
@@ -209,7 +211,7 @@
     border-right: 1px solid #FFE3CD;
 }
 
-.levelitemnametitleid{
+.diaryitemnametitleid{
     margin-left: 10px;
     font-family: Nunito;
     font-style: normal;
@@ -217,7 +219,7 @@
     font-size: 16px;
     line-height: 24px;
 }
-.levelitemnametitle{
+.diaryitemnametitle{
     margin-left: 10px;
     font-family: Nunito;
     font-style: normal;
@@ -227,7 +229,7 @@
     color: #FFFFFF;
     
 }
-.accountitemlistnew{
+.diaryitemlistnew{
     font-family: Nunito;
     font-style: normal;
     font-weight: normal;

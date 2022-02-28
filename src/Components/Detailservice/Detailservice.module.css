@@ -76,7 +76,7 @@
     color: #FF7506;
 }
 .detail__container{
-    width: 90%;
+    width: 92%;
     display: flex;
 }
 
@@ -169,4 +169,198 @@
     font-size: 16px;
     line-height: 24px;
     margin-top: 10px;
+}
+
+.detail__container__table{
+    margin-left: 20px;
+    width: 844px;
+    height: 606px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.servicedropdown{
+    display: flex;
+    margin-top: 10px;
+}
+
+.levelname{
+    color: #282739;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+.leveldrow{
+
+    width: 150px;
+}
+
+.leveldrowcalendar{
+    display: flex;
+
+}
+
+.goright{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.levelitem{
+    margin-left: 20px;
+}
+.searchinput{
+    width: 150px;
+    height: 44px;
+}
+
+.searchinput input{
+    padding: 10px 16px 10px 12px;   
+    background: #FFFFFF;
+    border: 1.5px solid #D4D4D7;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 184px;
+    height: 44px;
+}
+
+.fi_search{
+    position: absolute;
+    right: 140px;
+    top: 178px;
+}
+
+.tablelistitem{
+    margin-bottom:10px;
+    width: 95%;
+    filter: drop-shadow(2px 2px 8px rgba(232, 239, 244, 0.8));
+    border-radius: 12px;
+    display: flex;
+    flex-direction:column;
+    overflow:hidden;
+    padding: 0px;
+    margin-top:20px;
+    margin-left: 20px;
+    
+}
+
+.leveltable{
+    display: flex;
+    color:white;
+    width: 100%;
+    background: #FF9138;
+
+}
+
+.levelitemname{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    height: 49px;
+   
+
+    border-right: 1px solid #FFE3CD;
+}
+
+.levelitemnametitle{
+    margin-left: 10px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+
+}
+
+.leveltablelist{
+    display: flex;
+    color:white;
+    width: 100%;
+    background: #FFFFFF;
+}
+
+.levelitemnameid{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    height: 49px;
+    border-right: 1px solid #FFE3CD;
+}
+
+.levelitemnametitleid{
+    margin-left: 10px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.leveltablelist:nth-child(2n+1){
+    background: #FFF2E7;
+
+}
+.serviceitemname{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    height: 49px;
+    border-right: 1px solid #FFE3CD;
+}
+.serviceitemnametitleid{
+    margin-left: 10px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.chosepape{
+    width:90%;
+    margin-top:10px;
+    display:flex;
+    justify-content: flex-end;
+}
+.detail__container__update{
+    position: absolute;
+    top: 129px;
+    left: 1140px;
+}
+.eidt{
+    background: #FFF2E7;
+    width: 80px;
+    height: 94px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.back1{
+    position: absolute;
+    left: 0px;
+    top: 94px;
+    background: #FFF2E7;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ServiceAddIMG{
+    margin-top: 10px;
+}
+
+.add{
+    text-align: center;
+    color: #FF7506;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
 }

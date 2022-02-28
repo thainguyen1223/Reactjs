@@ -107,7 +107,7 @@
 
 .tablelcontainer{
     display: flex;
-    justify-content: space-between;
+    
     margin-bottom: 5px;
 }
 
@@ -182,4 +182,115 @@
 .nametitle{
     margin-left: 5px;
    
+}
+
+.tablelcontainer__left{
+    margin-left: 30px;
+}   
+
+.tablelist{
+    margin-top: 10px;
+    width: 560px;
+    height: 420px;
+    background: #FFF2E7;
+    border-radius: 8px;
+    overflow: scroll;
+}
+.tablelistgroup{
+    padding-left: 20px;
+}
+.tablegroupA{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FF7506;
+    padding-top: 20px;
+  
+}
+
+.tablegroup___item{
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+.tablegroup___title{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #535261;
+    margin-left: 5px;
+}
+.tablegroup___item input{
+    width: 14px;
+    height: 14px;
+    background: #FFFFFF;
+    order: 0;
+    padding: 0;
+    border: 1.5px solid #4277FF;
+    box-sizing: border-box;
+    border-radius: 4px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-clip: border-box;
+}
+
+.tablegroup___item input[type="checkbox"]:checked{
+    background: url(../image//success.svg) no-repeat  center #4277FF;
+    cursor:pointer;
+}
+
+::-webkit-scrollbar{
+    width: 4px;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FFC89B;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #000;
+}
+
+.contaniner__button{
+    display: flex;
+    
+    margin:50px auto;
+}
+
+.contaniner__cancel button{
+    cursor: pointer;
+    background: #FFF2E7;
+    border: 1.5px solid #FF9138;
+    box-sizing: border-box;
+    color:#FF9138;
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 38px;
+}
+
+.contaniner__addrole button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    margin-left: 20px;
+    color: white;
+    cursor: pointer;
+    background: #FF9138;
+    border:none;
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px;
 }

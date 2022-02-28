@@ -10,7 +10,9 @@
     justify-content: space-evenly;
 }
 
-
+.bell{
+    margin-left: 20px;
+}
 .dashboadtop{
     display: flex;
     justify-content: center;

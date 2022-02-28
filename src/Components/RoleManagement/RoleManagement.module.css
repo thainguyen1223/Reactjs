@@ -161,3 +161,39 @@
     color: #FF7506;
     padding: 7px
 }
+.leveltablelist{
+    display: flex;
+    color:white;
+    width: 100%;
+    background: #FFFFFF;
+}
+
+.levelitemname{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    height: 49px;
+    border-right: 1px solid #FFE3CD;
+}
+
+.levelitemnametitleid{
+    margin-left: 10px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+}
+.leveltablelist:nth-child(2n+1){
+    background-color: #FFF2E7;
+}
+
+.roleitemnametitleid1{
+    color: #4277FF;
+    text-decoration-line: underline;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+}

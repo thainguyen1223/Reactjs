@@ -23,11 +23,18 @@ import Detailservice from './Components/Detailservice';
 import Report from './Components/Report'
 import RoleManagement from './Components/RoleManagement'
 import AddRole from './Components/AddRole'
+import Detaildevice from './Components/Detaildevice';
+import Updatedevice from './Components/Updatedevice'
+import {useEffect,useState} from 'react'
 function App() {
 
   
+ 
+
   return (
+
     <div className="App">
+         
          <Routes>
           <Route path='/' element={<Login/>}/>
           <Route path='/wrong' element={<Wrongpass/>}/>
@@ -53,8 +60,12 @@ function App() {
           <Route path='/dashboard/RoleManagement' element={<RoleManagement/>}/>
           <Route path='/dashboard/RoleManagement/add-role-management' element={<AddRole/>}/>
           <Route path='/service/detailservice' element={<Detailservice/>}/>
+          <Route path='/device/detaildevice' element={<Detaildevice/>}/>
+          <Route path='/device/updatedevice' element={<Updatedevice/>}/>
     </Routes>
-    </div>
+    </div>  
+
+
   );
 }
 

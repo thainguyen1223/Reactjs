@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 import star from '../image/star.svg'
-import eyeclose from '../image/eyeclose.svg'
+
 import eyeopen from '../image/eyeopen.svg'
 function Update(){
     const optionsaccount = [

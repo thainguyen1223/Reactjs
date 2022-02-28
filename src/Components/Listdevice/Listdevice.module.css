@@ -123,7 +123,7 @@
     box-sizing: border-box;
     border-radius: 8px;
     width: 300px;
-    /* height: 44px; */
+    height: 44px;
     margin-top: 10px;
 }
 
@@ -230,3 +230,62 @@
     color: #FF7506;
     padding: 7px
 }
+.servicetablelist:nth-child(2n+1){
+    background: #FFF2E7;
+
+}
+.servicetablelist{
+    display: flex;
+    color:white;
+    width: 100%;
+    background: #FFFFFF;
+}
+
+.serviceitemname{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    height: 49px;
+    border-right: 1px solid #FFE3CD;
+}
+
+.serviceitemnametitleid{
+    margin-left: 10px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.but{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #282739;
+}
+
+.button{
+    cursor: pointer;
+    text-decoration-line:underline;
+    color: #4277FF;
+}
+
+.id span{
+
+    margin-left: 10px;
+}
+.serviceitemlistnew{
+    text-decoration-line: underline;
+    margin-left: 10px;
+    color: #4277FF;
+}
+.chosepape{
+    width:90%;
+    margin-top:15px;
+    display:flex;
+    justify-content: flex-end;
+}
+

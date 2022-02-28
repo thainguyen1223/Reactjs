@@ -14,7 +14,7 @@
     cursor: pointer;
     color: #7E7D88;
 }
-.pageitem:active{
+.ChosePage__Item--active{
     background-color: #FF7506;
     color:white;
     padding: 0 6px;
@@ -26,4 +26,13 @@
     color:white;
     padding: 0 6px;
     border-radius: 4px;
+}
+
+.pageitem--more{
+    color: #7E7D88;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
 }

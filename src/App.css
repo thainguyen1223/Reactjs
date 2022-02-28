@@ -102,8 +102,9 @@
 }
 
 .Dropdown-placeholder {
+  width: 133px;
   height: 20px;
-  line-height: 24px;
+  line-height: 28px;
 }
 
 .react-datepicker__navigation-icon::before {
@@ -118,4 +119,72 @@
   color: white;
   padding: 13px 52px 33px 10px;
   position: relative;
+}
+
+.levelitem{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+.levelitem .Dropdown-control{
+    width:100%;
+    height: 100%;
+    border-radius: unset !important;
+    background: #FF9138 !important;
+    color: white;
+    padding: 13px 52px 33px 10px;
+    position: relative;
+    
+}
+.levelitem .Dropdown-control::before{
+    
+    border-color:  white transparent transparent;
+    content: '';
+    position: absolute;
+    top: 26px;
+    right: 20px;
+    border-style: solid;
+    border-width: 4px;
+}
+
+.levelitem.Dropdown-control::after{
+    
+    border-color:   transparent transparent white;
+    content: '';
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    border-style: solid;
+    border-width: 4px;
+}
+
+
+
+.levelitem .Dropdown-arrow {
+    border-color: transparent transparent transparent !important;
+    top: 22px !important;
+}
+.Report__container__dropdown  .Dropdown-placeholder{
+   display: none;
+}
+.levelitem .levelname{
+    position:absolute;
+    top:15px;
+    left:0px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    
+    
+    /* White */
+    
+    color: #FFFFFF;
+    display:block
+}
+.activeSlidebar{
+  background-color: #FF7506;
 }
