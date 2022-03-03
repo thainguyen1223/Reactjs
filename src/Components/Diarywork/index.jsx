@@ -1,7 +1,7 @@
 import classes from './Diarywork.module.css'
 import Listitem from '../Listitem';
-import Diaryuser from '../Diaryuser';
-import { Link  } from 'react-router-dom'
+import Diaryuser from './Diaryuser';
+
 function Diarywork(){
     return(
         <div className={classes.listaccount}>

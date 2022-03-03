@@ -1,7 +1,7 @@
 import classes from "./Level.module.css"
 import Bellactive from "../Bellactive";
 import {Link} from 'react-router-dom';
-
+import ReactPaginate from "react-paginate";
 import Levelgoto from "../image/gotoright.svg";
 import {useState, useEffect} from 'react';
 import Dropdown from 'react-dropdown';
@@ -311,7 +311,7 @@ let handleSend = (item:any)=>{
                         </div>
                         <p className={classes.leveltitlename}> Cấp số mới</p>
                 </div>
-        </Link>      
+            </Link>      
             <div className={classes.chosepape}>
 
                <Page/>

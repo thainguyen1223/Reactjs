@@ -1,33 +1,33 @@
 import React from 'react'
-import classes from './Page.module.css'
+import './Page.css'
 import goretro from "../image/goretro.svg"
 import gonext from "../image/gonext.svg"
 function Page() {
-    const chosePages = document.querySelectorAll('.pageitem')
+    const chosePages = document.querySelectorAll('.PageItem')
     
     chosePages.forEach( (item:any) => {
         item.onclick = (e:any) =>{
-            const error =  document.querySelector<HTMLElement>('.pageitem1')!
-            error.classList.remove('pageitem1')
+            const error =  document.querySelector<HTMLElement>('.Page--active')!
+            error.classList.remove('Page--active')
                 
-                e.target.classList.add('pageitem1')
+                e.target.classList.add('Page--active')
         }
     })
     return (
-        <div className={classes.page }>
-                <div className={classes.goretro}>
+        <div className="Page">
+                <div className="ChosePage__preArrow">
                     <img src={goretro} alt="goretro" />
                 </div>
-                <div className={`{${classes.pageitem} ${classes.pageitem1}`}>1</div>
-                <div className={classes.pageitem}>2</div>
-                <div className={classes.pageitem}>3</div>
-                <div className={classes.pageitem}>4</div>
-                <div className={classes.pageitem}>5</div>
-                <div className={classes.pageitem}>...</div>
-                <div className={classes.pageitem}>10</div>
-                <div className={classes.gonext}>
+                <div className="PageItem Page--active">1</div>
+                <div className="PageItem">2</div>
+                <div className="PageItem">3</div>
+                <div className="PageItem">4</div>
+                <div className="PageItem">5</div>
+                <div className="PageItem--more">...</div>
+                <div className="PageItem">10</div>
+                <div className="PageItem__preArrow">
                     <img src={gonext} alt="" />
-                </div>
+                </div> 
         </div>
     )
 }

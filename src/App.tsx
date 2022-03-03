@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './App.css';
 import Dashboad from './Components/Dashboad';
 import Login from "./Components/Login/Login";
@@ -6,26 +6,26 @@ import Wrongpass from "./Components/Login/Wrongpass";
 import Forgotpass  from "./Components/Login/Forgotpass";
 import Resetpass  from "./Components/Login/Resetpass";
 import Account  from "./Components/Login/Account";
-import Listlevel from './Components/Listlevel'
-import {Routes , Route , Link , } from 'react-router-dom'
-import Addlevel from './Components/Addlevel';
-import Information  from './Components/Information';
-import Numberlevel from './Components/Numberlevel';
+import Listlevel from './Components/Level/Listlevel'
+import {Routes , Route } from 'react-router-dom';
+import Addlevel from './Components/Level/Addlevel';
+import Information  from './Components/Level/Information';
+import Numberlevel from './Components/Level/Numberlevel';
 import AccountManagement from './Components/AccountManagement';
 import Moreaccount from './Components/Moreaccount';
-import Updateaccount from './Components/Updateaccount';
+import Updateaccount from './Components/AccountManagement/Updateaccount';
 import Diarywork from './Components/Diarywork';
 import Service from './Components/Service';
 import Device from './Components/Device';
-import Adddevice from './Components/Adddevice';
-import Addservice from './Components/Addservice';
-import Detailservice from './Components/Detailservice';
-import Report from './Components/Report'
-import RoleManagement from './Components/RoleManagement'
-import AddRole from './Components/AddRole'
-import Detaildevice from './Components/Detaildevice';
-import Updatedevice from './Components/Updatedevice'
-import {useEffect,useState} from 'react'
+import Adddevice from './Components/Device/Adddevice';
+import Addservice from './Components/Service/Addservice';
+import Detailservice from './Components/Service/Detailservice';
+import Report from './Components/Report';
+import RoleManagement from './Components/RoleManagement';
+import AddRole from './Components/RoleManagement/AddRole';
+import Detaildevice from './Components/Device/Detaildevice';
+import Updatedevice from './Components/Device/Updatedevice';
+
 function App() {
 
   
@@ -33,10 +33,9 @@ function App() {
 
   return (
 
-    <div className="App">
-         
+    <div className="App"> 
          <Routes>
-          <Route path='/' element={<Login/>}/>
+         <Route path='/' element={<Login/>}/>
           <Route path='/wrong' element={<Wrongpass/>}/>
           <Route path='/wrong/forgot' element={<Forgotpass/>}/>
           <Route path='/wrong/forgot/reset' element={<Resetpass/>}/>

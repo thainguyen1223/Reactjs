@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.listrole{
+    width: 1440px;
+    background: #F7F7F7;
+    border-radius: 16px;
+    display: flex;
+}
+
+.listroleright{
+    width: 1240px;
+    display: flex;
+    flex: 4 1;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+}
+
+.role{
+    /* margin-left: 20px; */
+    position: relative;
+}
+.roleinfo{
+      display:flex;
+      justify-content:space-between;
+      /* padding: 20px 0px; */
+}
+  
+.roleinfolist{
+      display: flex;
+      align-items: center;
+}
+.roletitle{
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 30px;
+      color: #7E7D88;
+}
+  
+.rolegoto{
+      color: #7E7D88;
+      padding-left: 10px;
+      padding-right: 10px;
+}
+  
+.rolelist{
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 30px;
+      color: #FF7506;
+  
+}
+  
+.bell{
+    padding-right: 40px;
+}
+
+.rolecontainer{
+    margin-top: 38px;
+    display: flex;
+    flex-direction: column;
+    width: 92%;
+}
+
+.rolelisttitle{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FF7506;
+
+}
+
+.tablelistitem{
+    margin-bottom:10px;
+    display: flex;
+    flex-direction:column;
+    overflow:hidden;
+    padding: 0px;
+    margin-top:32px;
+    width: 1192px;
+    height: 534px;
+    
+    background: #FFFFFF;
+    box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+    border-radius: 16px;
+}
+
+.tableltilte{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FF7506;
+    padding: 10px 20px;
+}
+
+.tablelcontainer{
+    display: flex;
+    
+    margin-bottom: 5px;
+}
+
+.tablelcontainer__right{
+    padding-left: 20px;
+    height: 44px;
+    width: 560px;
+  
+
+}
+
+.tablelcontainer__Input{
+
+
+}
+
+.tablelcontainer__items{
+
+
+}
+
+.tablelcontainer__rolename1{
+
+    margin-top: 18px;
+}
+
+
+.tablelcontainer__text input{
+    padding: 10px 270px 10px 12px;
+    background: #FFFFFF;
+    border: 1.5px solid #D4D4D7;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 560px;
+    height: 44px;
+    margin-top: 10px;   
+}
+
+.table__title{
+    display: flex;
+}
+
+.title{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #282739;
+}
+
+.starid{
+    margin-left: 5px;
+
+}
+
+.tablelcontainer__text textarea{
+    padding: 10px 270px 10px 12px;
+    background: #FFFFFF;
+    border: 1.5px solid #D4D4D7;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 560px;
+    height: 160px;
+    margin-top: 10px;   
+}
+
+.nameitem{
+    display:  flex;
+    margin-top: 5px;
+}
+.nametitle{
+    margin-left: 5px;
+   
+}
+
+.tablelcontainer__left{
+    margin-left: 30px;
+}   
+
+.tablelist{
+    margin-top: 10px;
+    width: 560px;
+    height: 420px;
+    background: #FFF2E7;
+    border-radius: 8px;
+    overflow: scroll;
+}
+.tablelistgroup{
+    padding-left: 20px;
+}
+.tablegroupA{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FF7506;
+    padding-top: 20px;
+  
+}
+
+.tablegroup___item{
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+.tablegroup___title{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #535261;
+    margin-left: 5px;
+}
+.tablegroup___item input{
+    width: 14px;
+    height: 14px;
+    background: #FFFFFF;
+    order: 0;
+    padding: 0;
+    border: 1.5px solid #4277FF;
+    box-sizing: border-box;
+    border-radius: 4px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-clip: border-box;
+}
+
+.tablegroup___item input[type="checkbox"]:checked{
+    background: url(../../image/success.svg) no-repeat  center #4277FF;
+    cursor:pointer;
+}
+
+::-webkit-scrollbar{
+    width: 4px;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FFC89B;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #000;
+}
+
+.contaniner__button{
+    display: flex;
+    
+    margin:50px auto;
+}
+
+.contaniner__cancel button{
+    cursor: pointer;
+    background: #FFF2E7;
+    border: 1.5px solid #FF9138;
+    box-sizing: border-box;
+    color:#FF9138;
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 38px;
+}
+
+.contaniner__addrole button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    margin-left: 20px;
+    color: white;
+    cursor: pointer;
+    background: #FF9138;
+    border:none;
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px;
+}
