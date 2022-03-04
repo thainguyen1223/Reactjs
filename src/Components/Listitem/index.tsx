@@ -13,7 +13,22 @@ import { Link  } from 'react-router-dom'
 
 function Listitem(){
 
+    const slidebars = document.querySelectorAll('.SliderbarItem')
+    
+
+
+    slidebars.forEach( (slidebar:any) => {
   
+      slidebar.onclick = function () {
+  
+         let items = document.querySelector<HTMLElement>('.SliderbarItem.active')!
+              items.classList.remove('active')
+          
+          this.classList.add('active')
+          
+                        
+      }
+  })
 
 
   const [info, setInfo] = useState(false);
@@ -24,11 +39,11 @@ function Listitem(){
             <img src={alta} alt="alta" className="altaIMG"></img>
         </div>
         <div className="list">
-            <div className="SliderbarItem ">
-            <Link to='/dashboard' className="Link">
+            <div className="SliderbarItem active ">
+                <Link  to='/dashboard' className="Link">
                     <img className="ItemIMG" src={logo_dashboard} alt="alta"></img>
                     <div className="title">Dashboard</div>
-                    </Link>
+                </Link>
             </div>
 
             <div className="SliderbarItem">

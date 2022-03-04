@@ -198,7 +198,7 @@
     width: 80px;
     height: 80px;
     left: 1132px;
-    top: 227px;
+    top: 237px;
     display: flex;
     box-shadow: 0px 0px 6px #E7E9F2;
     border-radius: 8px 0px 0px 8px;
@@ -241,7 +241,7 @@
     background: #FFFFFF;
 }
 
-.serviceitemname{
+.deviceitemname{
     display: flex;
     flex-direction: row;
     align-items:center;
@@ -249,13 +249,15 @@
     border-right: 1px solid #FFE3CD;
 }
 
-.serviceitemnametitleid{
+.deviceitemnametitleid{
     margin-left: 10px;
     font-family: Nunito;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
+    color: #535261;
+
 }
 
 .but{
@@ -277,7 +279,7 @@
 
     margin-left: 10px;
 }
-.serviceitemlistnew{
+.deviceitemlistnew{
     text-decoration-line: underline;
     margin-left: 10px;
     color: #4277FF;

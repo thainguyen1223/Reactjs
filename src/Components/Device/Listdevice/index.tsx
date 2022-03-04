@@ -128,15 +128,15 @@ const optionsConnect = [
         <div className={classes.device}>
               <div className={classes.info}>
                 <div className={classes.infolist}>
-                    <p className={classes.title}>
+                    <div className={classes.title}>
                         Thiết bị 
-                    </p>
+                    </div>
                     
                     <img src={Levelgoto} alt="levelgoto" className={classes.devicegoto}></img>
             
-                    <p className={classes.detaillist}>
+                    <div className={classes.detaillist}>
                         Danh sách thiết bị 
-                    </p>
+                    </div>
 
                 </div>
                 <div className={classes.bell}>
@@ -188,28 +188,28 @@ const optionsConnect = [
             <div className={classes.tablelistitem}>
                     <div className={classes.devicetable}>
                             <div className={classes.deviceitemname} style={{width:"103px"}}>
-                                <p className={classes.deviceitemnametitle}> Mã thiết bị </p>    
+                                <div className={classes.deviceitemnametitle}> Mã thiết bị </div>    
                             </div>
                             <div className={classes.deviceitemname} style={{width:"99px"}}>
-                                <p className={classes.deviceitemnametitle}> Tên thiết bị </p>    
+                                <div className={classes.deviceitemnametitle}> Tên thiết bị </div>    
                             </div>
                             <div className={classes.deviceitemname} style={{width:"138px"}}>
-                                <p className={classes.deviceitemnametitle}> Địa chỉ IP </p>    
+                                <div className={classes.deviceitemnametitle}> Địa chỉ IP </div>    
                             </div>
                             <div className={classes.deviceitemname} style={{width:"171px"}}>
-                                <p className={classes.deviceitemnametitle}> Trạng thái hoạt động </p>    
+                                <div className={classes.deviceitemnametitle}> Trạng thái hoạt động </div>    
                             </div>
                             <div className={classes.deviceitemname} style={{width:"145px"}}>
-                                <p className={classes.deviceitemnametitle}> Trạng thái kết nối </p>    
+                                <div className={classes.deviceitemnametitle}> Trạng thái kết nối </div>    
                             </div>
                             <div className={classes.deviceitemname} style={{width:"268px"}}>
-                                <p className={classes.deviceitemnametitle}> Dịch vụ sử dụng </p>    
+                                <div className={classes.deviceitemnametitle}> Dịch vụ sử dụng </div>    
                             </div>
                             <div className={classes.deviceitemname} style={{width:"82px"}}>
-                                <p className={classes.deviceitemnametitle}>  </p>    
+                                <div className={classes.deviceitemnametitle}>  </div>    
                             </div> 
                          
-                                <p className={classes.deviceitemnametitle}>  </p>    
+                                <div className={classes.deviceitemnametitle}>  </div>    
                     
                         </div>
 
@@ -217,34 +217,34 @@ const optionsConnect = [
                          dataEquiment.map ( (item:any,index:any)=>   
                          
                     <div className={classes.servicetablelist}key={index}>
-                        <div className={classes.serviceitemname} style={{width:"103px"}}>
-                            <p className={classes.serviceitemnametitleid}>{item.code} </p>    
+                        <div className={classes.deviceitemname} style={{width:"103px"}}>
+                            <div className={classes.deviceitemnametitleid}>{item.code} </div>    
                         </div>
-                        <div className={classes.serviceitemname} style={{width:"99px"}}>
-                            <p className={classes.serviceitemnametitleid}>{item.name}  </p>    
+                        <div className={classes.deviceitemname} style={{width:"99px"}}>
+                            <div className={classes.deviceitemnametitleid}>{item.name}  </div>    
                         </div>
-                        <div className={classes.serviceitemname} style={{width:"138px"}}>
+                        <div className={classes.deviceitemname} style={{width:"138px"}}>
                                 
-                             <p className={classes.serviceitemnametitleid}>{item.adress}  </p>  
+                             <div className={classes.deviceitemnametitleid}>{item.adress}  </div>  
                           
                         </div>
-                        <div className={classes.serviceitemname} style={{width:"171px"}}>
-                            <p className={`${classes.levelitemnametitleid} ${classes.id}`}>
+                        <div className={classes.deviceitemname} style={{width:"171px"}}>
+                            <div className={`${classes.deviceitemnametitleid} ${classes.id}`}>
                                 
                                 {item.status=="Ngưng hoạt động"&&<ServiceWaitPoint/>}
                                 {item.status=="Hoạt động"&&<ServiceUsedPoint/>}
-                          </p>    
+                          </div>    
                         </div>
-                        <div className={classes.serviceitemname} style={{width:"145px"}}>
-                            <p className={`${classes.levelitemnametitleid} ${classes.id}`}>
+                        <div className={classes.deviceitemname} style={{width:"145px"}}>
+                            <div className={`${classes.deviceitemnametitleid} ${classes.id}`}>
                                 
                                 {item.connet == 'Mất kết nối' && <ServiceWaitPoint1/>}
                               {item.connet == 'Kết nối' && <ServiceUsedPoint1/>}
                           
-                          </p>    
+                          </div>    
                         </div>
-                        <div className={classes.serviceitemname} style={{width:"268px"}}>
-                                <p className={classes.serviceitemnametitleid}> 
+                        <div className={classes.deviceitemname} style={{width:"268px"}}>
+                                <div className={classes.deviceitemnametitleid}> 
                                         {item.node}
                                         {
                                             showMore && <div className={classes.but}> Khám tim mạch, Khám Sản - Phụ khoa, Khám răng hàm mặt,
@@ -257,17 +257,17 @@ const optionsConnect = [
                                             
                                             
                                                 
-                                                </p>  
+                                                </div>  
 
                         </div>
                         <Link to ="/device/detaildevice">
-                        <div className={classes.serviceitemname} style={{width:"82px"}}>
-                            <div className={classes.serviceitemlistnew}> Chi tiết  </div>    
+                        <div className={classes.deviceitemname} style={{width:"82px"}}>
+                            <div className={classes.deviceitemlistnew}> Chi tiết  </div>    
                         </div>
                         </Link>
                         <Link to ="/device/updatedevice">
-                        <div className={classes.serviceitemname}style={{width:"87px"}} >
-                            <div className={classes.serviceitemlistnew}>Cập nhật </div>    
+                        <div className={classes.deviceitemname}style={{width:"91px"}} >
+                            <div className={classes.deviceitemlistnew}>Cập nhật </div>    
                         </div>
                         </Link>
                     </div>
@@ -283,7 +283,7 @@ const optionsConnect = [
                         <div className={classes.adddevice}>
                                 <img src={plus} alt="" />  
                         </div>
-                        <p className={classes.devicetitlename}> Thêm thiết bị </p>
+                        <div className={classes.devicetitlename}> Thêm thiết bị </div>
                 </div>
             </Link>   
             <div className={classes.chosepape}>

@@ -4,7 +4,7 @@ import Listdevice from './Listdevice'
 function Device(){
     return(
         <div className={classes.listlevel}>
-                <Listitem/>
+              
             <div className={classes.listlevelright}>
                 <Listdevice/>
             </div>

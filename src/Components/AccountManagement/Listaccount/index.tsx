@@ -133,7 +133,7 @@ function Listaccount({dataTable,fetchData}:any){
 
                     {
                       dataUserList.map( (item:any,index:any) =>
-                    <div className={classes.accounttablelist}>
+                    <div className={classes.accounttablelist} key={index}>
                         <div className={classes.accountitemname} style={{width:"150px"}}>
                             <p className={classes.accountitemnametitleid}> {item.id} </p>    
                         </div>

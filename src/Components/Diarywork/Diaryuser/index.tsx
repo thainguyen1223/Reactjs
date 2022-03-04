@@ -75,7 +75,7 @@ function Diaryuser({dataTable,fetchData }:any){
                     </div>
                     {
                         dataUserDiary.map ( (item:any,index:any)=>
-                    <div className={classes.diarytablelist}>
+                    <div className={classes.diarytablelist} key={index}>
                         <div className={classes.diaryitemnameid} style={{width:"266px"}}>
                             <p className={classes.diaryitemnametitleid}> {item.name} </p>    
                         </div>

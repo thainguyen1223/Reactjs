@@ -6,7 +6,7 @@ import Level from '..'
 function Listlevel() {
     return(
         <div className={classes.listlevel}>
-                <Listitem/>
+         
             <div className={classes.listlevelright}>
                 <Level/>
             </div>

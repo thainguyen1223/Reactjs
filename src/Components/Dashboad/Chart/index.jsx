@@ -1,5 +1,4 @@
 import classes from './Chart.module.css'
-
 import  dashboadgreen from "../../image/dashboadgreen.png"
 import  dashboadblue from "../../image/dashboadblue.png"
 import  dashboadred  from "../../image/dashboadred.png"
@@ -11,13 +10,13 @@ import  godown from "../../image/godown.svg"
 function Chart(){
     return(
         <div className={classes.dashboadlist}>
-        <div className={classes.dashboadmiddle}>
-            <div className={classes.dashboadtitle}>
-                Dashboard
-            </div>
-            <div className={classes.levelchart}>
-                Biểu đồ cấp số
-            </div>     
+            <div className={classes.dashboadmiddle}>
+                <div className={classes.dashboadtitle}>
+                    Dashboard
+                </div>
+                <div className={classes.levelchart}>
+                    Biểu đồ cấp số
+                </div>     
             <div className={classes.chart}>
                 <div className={classes.dashboaditem}>
                     <div className={classes.itemtop}>
@@ -30,7 +29,7 @@ function Chart(){
                             <div className={classes.goup}>
                             <img src={goup} alt="goup" ></img>
                             </div>
-                            <div className={classes.precent}pan>32.41%</div>
+                            <div className={classes.precent}>32.41%</div>
                         </div>
                     </div>
                 </div>
@@ -46,7 +45,7 @@ function Chart(){
                             <div className={classes.goup}>
                             <img src={godown} alt="godown" ></img>
                             </div>
-                            <div className={classes.precent}pan>32.41%</div>
+                            <div className={classes.precent}>32.41%</div>
                         </div>
                     </div>
                 </div>
@@ -63,7 +62,7 @@ function Chart(){
                             <div className={classes.goup}>
                             <img src={goup} alt="goup" ></img>
                             </div>
-                            <div className={classes.precent}pan>56,41%</div>
+                            <div className={classes.precent}>56,41%</div>
                         </div>
                     </div>
                 </div>
@@ -80,14 +79,13 @@ function Chart(){
                             <div className={classes.goup}>
                             <img src={godown} alt="godown" ></img>
                             </div>
-                            <div className={classes.precent}pan>22,41%</div>
+                            <div className={classes.precent}>22,41%</div>
                         </div>
                     </div>
                 </div>
 
             </div>     
-            
-        
+                
         </div>
                    
         </div>

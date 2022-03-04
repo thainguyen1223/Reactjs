@@ -19,6 +19,7 @@
     margin-top: 30px;
     width: 200px;
     height: 44px;
+    height: 610px;
 }
 .SliderbarItem{
     padding: 15px 0px;
@@ -32,19 +33,27 @@
     font-size: 16px;
     line-height: 24px;
 }
-
 .SliderbarItem:hover{
     background-color: #FF7506;
+    color: #FFFFFF;
+   
+}
+.SliderbarItem:hover.title{
+    color:#FFFFFF;
 }
 
-.Link:hover{
+.active{
     background-color: #FF7506;
-    color: white;
+  
+}
+.active .title{
+    color: #FFFFFF ;
+  
 }
 
 
 .title{
-    margin-left: 5px;
+    margin-left: 7px;
 }
 .three{
     margin-left: 20px;

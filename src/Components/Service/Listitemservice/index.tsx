@@ -3,7 +3,7 @@ import Bellactive from "../../Bellactive";
 import {Link} from 'react-router-dom';
 import levelgoto     from "../../image/gotoright.svg";
 import Dropdown from 'react-dropdown';
-// import '../../style/style.css';
+import '../../style/style.css';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import fi_search from"../../image/fi_search.svg"
@@ -152,7 +152,7 @@ function Listitemservice({dataTable,fetchData, }:any){
                     {
                         dataServiceTable.map ( (item:any,index:any)=>   
                          
-                    <div className={classes.servicetablelist}>
+                    <div className={classes.servicetablelist} key={index}>
                         <div className={classes.serviceitemname} style={{width:"150px"}}>
                             <p className={classes.serviceitemnametitleid}>{item.code} </p>    
                         </div>

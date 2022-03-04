@@ -16,7 +16,13 @@
 .sdp--square-btn__shadowed {
   color: orange !important;
 }
+.Dropdown-option:hover{
+  background: #FFF2E7 !important;
+}
 
+.Dropdown-option.is-selected{
+  background: #FFF2E7 !important;
+}
 .Dropdown-control {
   background: #FFFFFF !important;
   border: 1.5px solid #D4D4D7 !important;
@@ -36,6 +42,9 @@
 
 }
 
+.react-datepicker__navigation-icon--next{
+  color: #FF7506 !important;
+}
 
 .react-datepicker__input-container input {
   width:150px;

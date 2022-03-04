@@ -25,7 +25,7 @@ import RoleManagement from './Components/RoleManagement';
 import AddRole from './Components/RoleManagement/AddRole';
 import Detaildevice from './Components/Device/Detaildevice';
 import Updatedevice from './Components/Device/Updatedevice';
-
+import Listitem from './Components/Listitem'
 function App() {
 
   
@@ -40,8 +40,8 @@ function App() {
           <Route path='/wrong/forgot' element={<Forgotpass/>}/>
           <Route path='/wrong/forgot/reset' element={<Resetpass/>}/>
           <Route path='/account' element={<Account/>}/>
-          <Route path='/dashboard' element={<Dashboad/>}/>
-          <Route path='/level' element={<Listlevel/>}/>
+          <Route path='/dashboard' element={<><Listitem/><Dashboad/></>}/>
+          <Route path='/level' element={<><Listitem/><Listlevel/></>}/>
           <Route path='/level/add-level' element={<Addlevel/>}/>
           <Route path='/level/add-level/level' element={<Listlevel/>}/>
           <Route path='/level/service' element={< Information/>}/>
@@ -51,10 +51,10 @@ function App() {
           <Route path='/dashboard/AccountManagement/Moreaccount' element={<Moreaccount/>}/>
           <Route path='/dashboard/AccountManagement/Updateaccount' element={<Updateaccount/>}/>
           <Route path='/dashboard/Diarywork' element={<Diarywork/>}/>
-          <Route path='/Device' element={<Device/>}/>
+          <Route path='/Device' element={<><Listitem/> <Device/></>}/>
           <Route path='/Device/add-device' element={<Adddevice/>}/>
-          <Route path='/service' element={<Service/>}/>
-          <Route path='/report' element={<Report/>}/>
+          <Route path='/service' element={<><Listitem/> <Service/></>}/>
+          <Route path='/report' element={<><Listitem/> <Report/></>}/>
           <Route path='/listservice' element={<Addservice/>}/>
           <Route path='/dashboard/RoleManagement' element={<RoleManagement/>}/>
           <Route path='/dashboard/RoleManagement/add-role-management' element={<AddRole/>}/>
