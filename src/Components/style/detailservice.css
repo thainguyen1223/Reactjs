@@ -1,4 +1,4 @@
-.Dropdown-control{
+ .Dropdown-control{
     height: 44px;
 }
 
@@ -12,6 +12,11 @@
 }
 
 .Listdevice_devicedrow__fDtd+ .Dropdown-placeholder {
+    width: 131px;
+    height: 20px;
+    line-height: 28px;
+  }
+  .Listdevice_devicedrow__IQ1D+ .Dropdown-placeholder {
     width: 131px;
     height: 20px;
     line-height: 28px;

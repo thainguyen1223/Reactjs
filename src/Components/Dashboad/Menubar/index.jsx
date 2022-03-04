@@ -42,13 +42,13 @@ function Menubar(){
                         </div>
                         <div className={classes.listdeviceright}>
                             <div className={classes.listdevicertop}>
-                                <div className={classes.rowleft} style={{color:"#FFD130"}} >.</div>
+                                <div className={classes.rowleft} style={{color:"orange"}} >.</div>
                                 <div className={classes.rowmiddle} >Đang hoạt động</div>
                                 <div className={classes.rowright} >3.799</div>
                             </div>
 
                             <div className={classes.listdevicertop}>
-                                <div className={classes.rowleft} style={{color:"#7E7D88;"}}>.</div>
+                                <div className={classes.rowleft} style={{color:"black"}}>.</div>
                                 <div className={classes.rowmiddle} >Ngưng hoạt động</div>
                                 <div className={classes.rowright} >422</div>
                             </div>
@@ -63,19 +63,19 @@ function Menubar(){
                                 <p className={classes.number}>276</p>
                                 <div className={classes.listdevicebottom}>
                                     <img src={service_blue} alt="service_blue" className={classes.pencentimg}></img>
-                                    <p className={classes.listtitlebottom} style={{color:"#4277FF"}}>Dịch vụ</p>
+                                    <p className={classes.listtitlebottom} style={{color:"blue"}}>Dịch vụ</p>
                                 </div>
                             </div>
                         </div>
                         <div className={classes.listdeviceright}>
                             <div className={classes.listdevicertop}>
-                                <div className={classes.rowleft} style={{color:"#4277FF;"}}>.</div>
+                                <div className={classes.rowleft} style={{color:"blue"}}>.</div>
                                 <div className={classes.rowmiddle} >Đang hoạt động</div>
                                 <div className={classes.rowright} >210</div>
                             </div>
 
                             <div className={classes.listdevicertop}>
-                                <div className={classes.rowleft} style={{color:"#7E7D88;"}}>.</div>
+                                <div className={classes.rowleft} style={{color:"black"}}>.</div>
                                 <div className={classes.rowmiddle} >Ngưng hoạt động</div>
                                 <div className={classes.rowright} >66</div>
                             </div>
@@ -90,19 +90,19 @@ function Menubar(){
                                 <p className={classes.number}>4.221</p>
                                 <div className={classes.listdevicebottom}>
                                     <img src={level_green} alt="level_green" className={classes.pencentimg}></img>
-                                    <p className={classes.listtitlebottom} style={{color:"#35C75A"}}>Cấp số</p>
+                                    <p className={classes.listtitlebottom} style={{color:"green"}}>Cấp số</p>
                                 </div>
                             </div>
                         </div>
                         <div className={classes.listdeviceright}>
                             <div className={classes.listdevicertop}>
-                                <div className={classes.rowleft} style={{color:"#35C75A;"}}>.</div>
+                                <div className={classes.rowleft} style={{color:"green"}}>.</div>
                                 <div className={classes.rowmiddle} >Đã sử dụng  </div>
                                 <div className={classes.rowright} >3.721</div>
                             </div>
 
                             <div className={classes.listdevicertop}>
-                                <div className={classes.rowleft} style={{color:"#7E7D88;"}}>.</div>
+                                <div className={classes.rowleft} style={{color:"pink"}}>.</div>
                                 <div className={classes.rowmiddle} >Đang chờ</div>
                                 <div className={classes.rowright} >486</div>
                             </div>

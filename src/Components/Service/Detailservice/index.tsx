@@ -68,17 +68,17 @@ function Detailservice({dataTable,fetchData}:any){
             
                 if(e.value=='Đã hoàn thành'){
                         const filterdata = data  .filter( (item:any)=> item.status == 'Đã hoàn thành')
-                        dataServiceTable(filterdata)
+                        setDataServiceTable(filterdata)
                 }else if(e.value=='Đang thực hiện') {
                         const filterdata = data  .filter((item:any) =>item.status == 'Đang thực hiện')
-                        dataServiceTable(filterdata)
+                        setDataServiceTable(filterdata)
                 }else if(e.value=='Vắng') {
                     const filterdata = data.filter((item:any) => item.status == 'Vắng')
-                    dataServiceTable(filterdata)
+                    setDataServiceTable(filterdata)
                     }
                 
                 else{
-                    dataServiceTable(data  )
+                    setDataServiceTable(data  )
                 }
                  
            }
@@ -211,9 +211,9 @@ function Detailservice({dataTable,fetchData}:any){
                                  </div>
                                 <div className={classes.levelitemnameid} style={{width:"333px"}}>
                                     <p className={`${classes.levelitemnametitleid} ${classes.id}`}>  
-                                    {item.status == 'Đã hoàn thành' && <ServiceWaitPoint/>}
-                                    {item.status == 'Vắng' && <ServiceUnactivePoint/>}
-                                    {item.status == 'Đang thực hiện' && <ServiceUsedPoint/>}
+                                        {item.status == 'Đã hoàn thành' && <ServiceWaitPoint/>}
+                                        {item.status == 'Vắng' && <ServiceUnactivePoint/>}
+                                        {item.status == 'Đang thực hiện' && <ServiceUsedPoint/>}
                                     </p>       
                                 </div>
                             </div>

@@ -4,6 +4,7 @@ import Bellactive from "../../Bellactive";
 import fi_search from"../../image/fi_search.svg"
 import Dropdown from 'react-dropdown';
 import '../../style/detailservice.css';
+import '../../style/style.css';
 import {useState, useEffect} from 'react';
 import plus from "../../image/plus.svg";
 import {Link} from 'react-router-dom';
